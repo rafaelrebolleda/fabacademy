@@ -6,7 +6,7 @@
 
 ## Welcome to your new Fab Academy site
 
-This is an example student blog for the Fab Academy.
+Hello World!
 
 ## How to edit it
 
