@@ -1,15 +1,11 @@
-image: python:alpine
-
-before_script:
-  - pip install -r requirements.txt
+image: alpine:latest
 
 pages:
+  stage: deploy
   script:
-  - mkdocs build
-  - mv _site public
+  - echo 'Nothing to do...'
   artifacts:
     paths:
     - public
   only:
   - master
-
