@@ -88,6 +88,14 @@ main p {
   line-height: 130%;;
 }
 
+main ul {
+  margin-left: 40px;
+}
+
+main ul li {
+  margin-bottom: 7px;;
+}
+
 main img {
   width: 500px;
   margin: 15px;
