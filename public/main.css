@@ -20,24 +20,38 @@ nav {
   border-right: 1px solid #CCC;
 }
 
-header {
-  height: 100px;
-}
-
 header img#avatar {
   float: left;
   width: 60px;
   margin-right: 10px;
   border-radius: 7px;
   border: 1px solid #CCC;
-
 }
 
-header p {
+header ul {
+  list-style-type: none;
+}
+header ul li:first-child {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+header ul li {
+  position: relative;
+  top: 5px;;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+
+header p.bio {
+  clear: both;
+  margin-top: 20px;
 }
 
 ol {
   clear: both;
+  margin-top: 15px;
   list-style-type: none;
 }
 
