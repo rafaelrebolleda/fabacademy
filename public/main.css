@@ -83,9 +83,14 @@ main h1:first-of-type {
   margin-top: 0;
 }
 
+main h2 {
+  margin: 20px 0 10px 0;
+}
+
+
 main p {
-  margin-bottom: 10px;;
-  line-height: 130%;;
+  margin-bottom: 10px;
+  line-height: 130%;
 }
 
 main ul {
@@ -93,10 +98,10 @@ main ul {
 }
 
 main ul li {
-  margin-bottom: 7px;;
+  margin-bottom: 7px;
 }
 
 main img {
   width: 500px;
-  margin: 15px;
+  margin: 15px;;
 }
