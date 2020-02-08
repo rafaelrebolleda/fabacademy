@@ -1,33 +1,45 @@
+/* The most basic CSS Reset ever
+ ********************************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
-  background-color: rgb(255, 255, 250);
+  background-color: #fffffa;
 }
-
 nav {
   position: fixed;
-  width: 250px; 
+  width: 250px;
   height: 100%;
-  padding: 20px; 
+  padding: 20px;
   border-left: 20px solid #333;
-  background-color: #FAFAFA;
-  border-right: 1px solid #CCC;
+  background-color: #fafafa;
+  border-right: 1px solid #ccc;
 }
-
 header img#avatar {
   float: left;
   width: 60px;
   margin-right: 10px;
   border-radius: 7px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
 }
-
 header ul {
   list-style-type: none;
 }
@@ -35,72 +47,57 @@ header ul li:first-child {
   font-weight: bold;
   font-size: 14px;
 }
-
 header ul li {
   position: relative;
-  top: 5px;;
+  top: 5px;
   margin-bottom: 5px;
   font-size: 12px;
 }
-
 header p.bio {
   clear: both;
   margin-top: 20px;
 }
-
 ol {
   clear: both;
   margin-top: 25px;
   list-style-type: none;
 }
-
 ol li {
   display: inline-block;
   position: relative;
   left: -33px;
   padding: 5px 25px;
   margin-bottom: 30px;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   text-transform: capitalize;
   transform: rotate(-1deg);
   font-family: "Marker Felt", fantasy;
   font-size: 16px;
-
-
 }
-
 main {
   margin-left: 250px;
   padding: 20px;
 }
-
 main h1 {
   margin: 30px 0 15px 0;
 }
-
 main h1:first-of-type {
   margin-top: 0;
 }
-
 main h2 {
   margin: 20px 0 10px 0;
 }
-
-
 main p {
   margin-bottom: 10px;
   line-height: 130%;
 }
-
 main ul {
   margin-left: 40px;
 }
-
 main ul li {
   margin-bottom: 7px;
 }
-
 main img {
   width: 500px;
   margin-bottom: 20px;
