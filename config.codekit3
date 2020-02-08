@@ -25,7 +25,27 @@
 		"oAP": "/.gitlab-ci.yml",
 		"oF": 1
 		},
-	"/_/base/main.styl": {
+	"/_/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/index.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"/_/layouts/main.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/public/css/main.css",
+		"oF": 3,
+		"oS": 0
+		},
+	"/_/layouts/main.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -37,16 +57,6 @@
 		"oF": 2,
 		"oS": 0,
 		"rrU": 0
-		},
-	"/_/index.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/public/index.html",
-		"oF": 2,
-		"oS": 0
 		},
 	"/_/modules/head.pug": {
 		"cB": 0,
@@ -67,6 +77,94 @@
 		"oAP": "/public/css/main-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/public/images/esish.jpg": {
+		"ft": 16384,
+		"iS": 73386,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/public/images/esish.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/public/images/gklp.jpg": {
+		"ft": 16384,
+		"iS": 62852,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/public/images/gklp.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/public/images/pedalboard.jpg": {
+		"ft": 16384,
+		"iS": 12177,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/public/images/pedalboard.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/public/images/process.png": {
+		"ft": 32768,
+		"iS": 126382,
+		"oA": 0,
+		"oAP": "/public/images/process.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/public/images/rrm.jpg": {
+		"ft": 16384,
+		"iS": 14700,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/public/images/rrm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/public/images/squares.jpg": {
+		"ft": 16384,
+		"iS": 14383,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/public/images/squares.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/public/images/strat.jpg": {
+		"ft": 16384,
+		"iS": 83144,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/public/images/strat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/public/images/switcher.jpg": {
+		"ft": 16384,
+		"iS": 8085,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/public/images/switcher.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/public/index.html": {
 		"cB": 0,
@@ -94,112 +192,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/temp/images/esish.jpg": {
-		"ft": 16384,
-		"iS": 73386,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/temp/images/esish.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/temp/images/gklp.jpg": {
-		"ft": 16384,
-		"iS": 62852,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/temp/images/gklp.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/temp/images/pedalboard.jpg": {
-		"ft": 16384,
-		"iS": 12177,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/temp/images/pedalboard.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/temp/images/process.png": {
-		"ft": 32768,
-		"iS": 126382,
-		"oA": 0,
-		"oAP": "/temp/images/process.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/temp/images/rrm.jpg": {
-		"ft": 16384,
-		"iS": 14700,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/temp/images/rrm.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/temp/images/squares.jpg": {
-		"ft": 16384,
-		"iS": 14383,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/temp/images/squares.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/temp/images/strat.jpg": {
-		"ft": 16384,
-		"iS": 83144,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/temp/images/strat.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/temp/images/switcher.jpg": {
-		"ft": 16384,
-		"iS": 8085,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/temp/images/switcher.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/temp/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/temp/index.html",
-		"oF": 0
-		},
-	"/temp/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/temp/main-min.css",
-		"oF": 0,
-		"oS": 3
 		}
 	},
 "hooks": [
