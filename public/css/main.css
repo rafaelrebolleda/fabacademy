@@ -73,6 +73,7 @@ ol li {
   font-size: 16px;
 }
 main {
+  width: 700px;
   margin-left: 270px;
   padding: 20px 40px;
   background: url("../images/pixels.gif") repeat-y;
