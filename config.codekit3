@@ -100,6 +100,14 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/public/images/lines.gif": {
+		"ft": 4194304,
+		"iS": 429,
+		"oA": 0,
+		"oAP": "/public/images/lines.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"/public/images/pedalboard.jpg": {
 		"ft": 16384,
 		"iS": 12177,
@@ -110,6 +118,14 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/public/images/pixels.gif": {
+		"ft": 4194304,
+		"iS": 165,
+		"oA": 0,
+		"oAP": "/public/images/pixels.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"/public/images/process.png": {
 		"ft": 32768,
