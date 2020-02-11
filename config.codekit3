@@ -14,7 +14,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/.gitignore",
+		"oAP": "/public/.gitignore",
 		"oF": 1
 		},
 	"/.gitlab-ci.yml": {
@@ -22,7 +22,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/.gitlab-ci.yml",
+		"oAP": "/public/.gitlab-ci.yml",
 		"oF": 1
 		},
 	"/_/index.pug": {
@@ -64,130 +64,34 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_/modules/head.html",
+		"oAP": "/public/modules/head.html",
 		"oF": 1,
 		"oS": 0
 		},
-	"/public/css/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/public/css/main-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/public/images/esish.jpg": {
-		"ft": 16384,
-		"iS": 73386,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/public/images/esish.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/public/images/gklp.jpg": {
-		"ft": 16384,
-		"iS": 62852,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/public/images/gklp.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/public/images/lines.gif": {
-		"ft": 4194304,
-		"iS": 429,
-		"oA": 0,
-		"oAP": "/public/images/lines.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/public/images/pedalboard.jpg": {
-		"ft": 16384,
-		"iS": 12177,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/public/images/pedalboard.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/public/images/pixels.gif": {
-		"ft": 4194304,
-		"iS": 165,
-		"oA": 0,
-		"oAP": "/public/images/pixels.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/public/images/process.png": {
-		"ft": 32768,
-		"iS": 126382,
-		"oA": 0,
-		"oAP": "/public/images/process.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/public/images/rrm.jpg": {
-		"ft": 16384,
-		"iS": 14700,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/public/images/rrm.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/public/images/squares.jpg": {
-		"ft": 16384,
-		"iS": 14383,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/public/images/squares.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/public/images/strat.jpg": {
-		"ft": 16384,
-		"iS": 83144,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/public/images/strat.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/public/images/switcher.jpg": {
-		"ft": 16384,
-		"iS": 8085,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/public/images/switcher.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/public/index.html": {
+	"/_/pages/W1/index.pug": {
 		"cB": 0,
-		"ft": 8192,
+		"cOD": 1,
+		"ft": 512,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/public/index.html",
+		"oAP": "/public/W1/index.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"/_/pages/W2/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/W2/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/public": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/public/public",
 		"oF": 0
 		},
 	"/student_agreement.md": {
@@ -200,7 +104,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/student_agreement.html",
+		"oAP": "/public/student_agreement.html",
 		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
@@ -513,7 +417,7 @@
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
-	"buildFolderActive": 0,
+	"buildFolderActive": 1,
 	"buildFolderName": "public",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
@@ -2599,7 +2503,7 @@
 		},
 	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$,exports,require",
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "/public"
 	},
 "settingsFileVersion": "3"
 }
