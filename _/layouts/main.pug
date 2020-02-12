@@ -12,14 +12,14 @@ head
   // Google Fonts
   link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Catamaran&display=swap")
 
-  link(rel="stylesheet", href="css/main.css")
+  link(rel="stylesheet", href="../css/main.css")
 
 body 
 
   block sidebar
     nav
       header
-        img#avatar(src="images/rrm.jpg", alt="Rafael Rebolleda")
+        img#avatar(src="/images/rrm.jpg", alt="Rafael Rebolleda")
         ul
           li Rafael Rebolleda
           li ESNE + LEON
@@ -28,9 +28,9 @@ body
         p.bio Human Centric Research & Innovation consultant and professor. Also looking for PhD opportunities!
 
       ol
-        li About me
-        li Principles
-        li Project Management
+        li: a(href="../") About me
+        li: a(href="../W1/") W1: Project Mgnt.
+        li: a(href="../W2/") W2: CAD
 
   block main
 
