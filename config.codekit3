@@ -35,16 +35,6 @@
 		"oF": 2,
 		"oS": 0
 		},
-	"/_/layouts/main.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/public/css/main.css",
-		"oF": 3,
-		"oS": 0
-		},
 	"/_/layouts/main.styl": {
 		"aP": 0,
 		"bl": 0,
