@@ -2,4 +2,54 @@ extends ../../layouts/main.pug
 
 block main
   main
-    h1 CAD
+    h1 W2: Computer Aided Design
+
+    p So... I have no experience whatsoever with 3D. In fact I've been avoiding it for most of my career, just like video editing, because it always seems SLOOOOOW compared to the lightness of a code editor or 2D UI tools like Figma.
+    
+    h2 Goals
+    ul
+      li Try different 3D software
+      li Understand the basic mental model of 3D modelling vs. 2D grpahic design
+      li Explore very basic operatons like extruding shapes and doing holes
+      li Begin to understand how I would approach one my <a href="../W1">final project</a> pieces
+    
+    h2 Resources
+    p I decided to chekck the following tools
+    ul
+      li: a(href="https://tinkercad.com") Tinkercad.
+      li: a(href="https://onshape.com") OnShape
+      li: a(href="https://www.autodesk.com/products/fusion-360/students-teachers-educators") Fusion 360
+
+    p I really like Tinkercad, but it seems to be pretty limited. OnShape lured me with the promise of browser based editing, but in my experience it was a bit clunky.
+
+    p In the end, I settled with Fusion 360 for the follwing reasons:
+    ul
+      li Does all the things that we seems to need
+      li Free license for students and educators. Simple registration and set up process
+      li Lots of documentation available
+
+    p Speaking of documentation, here are the resources I checked:
+    ul
+      li Autodesk has a nomber of <a href="https://f360ap.autodesk.com/courses#getting-started-for-absolute-beginners">training videos</a> in their platform once you log in, although I found them geared towards people who already know 3D and are transitioning to Fusion 360
+      li Autodesk also has quite a few free training cursos <a href="https://www.udemy.com/courses/search/?src=ukw&q=Fusion%20360&p=1&price=price-free">on Udemy</a>.
+      li <a href="https://www.makershed.com/products/fusion-360-for-makers-pdf">The book "Fusion360 for Makers"</a>, from Make Media really starts from the bare bottom.
+
+    h2 Explorations
+    p So I started with the basics... drawing a shape and trying to punch a hole through it. It took a while to understand it, because the process' implementation is very different from 2D boolean operations, despite being conceptually equal.
+    img(src="hole.jpg", alt="")
+
+    p In this case I'm drawing another "sketch" to create a new piece of the pedalboard.
+    p It also gave me the opportunity to explore <b>constraints</b>, like parallel lines.
+    img(src="sketch.jpg", alt="")
+
+    p This is how both of them look together.
+    img(src="extrusions.jpg", alt="")
+
+    p A very simple render with wood:
+    img(src="render.jpg", alt="")
+
+
+    h2 Learnings
+    p Obviously this is not a finished piece, but it has all the necessary elements already. I need to polish and create the rest of the pieces following the same approach. 
+
+    p I've got to say that it was —maybe unsurprisingly— way harder than I anticipated, mostly because 3D and 2D software have such different interaction and conceptual model, even the uttlery basic stuff like panning and zooming, or even copy/paste. This is by far the most frustrating part, but I guess also the point of the whole exercise :)
