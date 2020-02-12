@@ -58,6 +58,7 @@ nav ol {
   clear: both;
   margin-top: 25px;
   list-style-type: none;
+  width: 270px;
 }
 nav ol li {
   display: inline-block;
@@ -69,7 +70,8 @@ nav ol li {
   color: #3c3744;
   text-transform: capitalize;
   transform: rotate(-1deg);
-  font-family: "Marker Felt", fantasy;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   font-size: 16px;
   border-bottom: 2px solid #3c3744;
   border-right: 2px solid #3c3744;
