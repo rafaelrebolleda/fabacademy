@@ -1,9 +1,15 @@
 // A few vars
-$trans_white = rgba(255, 255, 255, 0.7)
-
 $rwd-breakpoint = 980px
 $handheld = "screen and (max-width: " + $rwd-breakpoint + ")"
 $desktop = "screen and (min-width: " + $rwd-breakpoint + ")"
+
+// Color palette
+$trans_white = rgba(255, 255, 255, 0.7)
+$grey = #3C3744
+$blue = #00B5AC
+$yellow = #EECC00
+$red = #F2545B
+
 
 // Foundation
 /* The most basic CSS Reset ever
@@ -62,15 +68,17 @@ nav
       left: -33px
       padding: 5px 25px
       margin-bottom: 30px
-      background-color: black
-      color: white
+      background-color: $yellow
+      color: $grey
       text-transform: capitalize
       transform: rotate(-1deg)
       font-family: "Marker Felt", fantasy
       font-size: 16px
+      border-bottom: 2px solid $grey
+      border-right: 2px solid $grey
 
       a
-        color: #FFF
+        color: $grey
         text-decoration: none
 
 
@@ -80,25 +88,31 @@ main
   padding: 20px 40px
   background: url("../images/pixels.gif") repeat-y
 
-main h1 
-  margin: 30px 0 15px 0
+  a
+    color: $red
+    text-decoration: none
 
-main h1:first-of-type 
-  margin-top: 0
+  h1 
+    margin: 30px 0 15px 0
+    color: $blue
 
-main h2 
-  margin: 20px 0 10px 0
+  h1:first-of-type 
+    margin-top: 0
 
-main p 
-  margin-bottom: 10px
-  line-height: 130%
+  h2 
+    margin: 20px 0 10px 0
+    color: $red
 
-main ul 
-  margin-left: 40px
+  p 
+    margin-bottom: 10px
+    line-height: 130%
 
-main ul li 
-  margin-bottom: 7px
+  ul 
+    margin-left: 40px
 
-main img 
-  width: 500px
-  margin-bottom: 20px
+    li 
+      margin-bottom: 7px
+
+  img 
+    width: 500px
+    margin-bottom: 20px
