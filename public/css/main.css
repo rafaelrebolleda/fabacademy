@@ -103,15 +103,16 @@ main h2 {
 }
 main p {
   margin-bottom: 10px;
-  line-height: 130%;
+  line-height: 150%;
 }
 main ul {
-  margin-left: 40px;
+  margin: 10px 0 20px 40px;
 }
 main ul li {
   margin-bottom: 7px;
+  line-height: 170%;
 }
 main img {
-  width: 500px;
+  width: 650px;
   margin-bottom: 20px;
 }
