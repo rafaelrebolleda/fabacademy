@@ -1,6 +1,36 @@
-extends layouts/main.pug
+doctype html
+html(lang="en")
 
-block main
+head
+  meta(charset="utf-8")
+  meta(content="IE=edge", http-equiv="X-UA-Compatible")
+  meta(content="width=device-width, initial-scale=1", name="viewport")
+
+  block title
+    title  Rafael Rebolleda — Fab Academy 2020 Documentation
+
+  // Google Fonts
+  link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Catamaran&display=swap")
+
+  link(rel="stylesheet", href="css/main.css")
+
+body 
+
+  nav
+    header
+      img#avatar(src="images/rrm.jpg", alt="Rafael Rebolleda")
+      ul
+        li Rafael Rebolleda
+        li ESNE + LEON
+        li Madrid, Spain
+
+      p.bio Human Centric Research & Innovation consultant and professor. Also looking for PhD opportunities!
+
+    ol
+      li: a(href="#") About me
+      li: a(href="W1/") W1: Project Mgnt.
+      li: a(href="W2/") W2: CAD
+
   main
     h1 About Me
     p Hi there and thanks for dropping by :)
