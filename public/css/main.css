@@ -61,23 +61,21 @@ nav ol {
   width: 270px;
 }
 nav ol li {
-  display: inline-block;
   position: relative;
   left: -33px;
-  padding: 5px 25px;
   margin-bottom: 30px;
+  transform: rotate(-1deg);
+}
+nav ol li a {
+  padding: 5px 25px;
+  text-decoration: none;
   background-color: #ec0;
   color: #3c3744;
   text-transform: capitalize;
-  transform: rotate(-1deg);
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   font-size: 16px;
   box-shadow: 3px 3px 1px;
-}
-nav ol li a {
-  color: #3c3744;
-  text-decoration: none;
 }
 main {
   width: 700px;
