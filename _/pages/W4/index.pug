@@ -1,0 +1,111 @@
+extends ../../layouts/main.pug
+
+block main
+  main
+    h1 W4: Electronics Production
+    h2 Characterization
+    p We start by milling the following template to understand the resolution we can work with with our <a href="https://www.rolanddga.com/support/products/milling/modela-mdx-40-3d-milling-machine">Roland MDX-40</a>.
+    img(src="linetest.jpg", alt="")
+
+    p The bit that we're using is the following:
+    img(src="bit.jpg", alt="")
+
+    p We use mods to process the image and create de code that we'll load on the milling machine:
+    img(src="linetest_mods.jpg", alt="")
+
+    p The first try doesn't work very well, because the board is not properly attached —flat— to the bed. We tried re-calibrating the bit and also adjusting a deeper cut, but in reality we just need to re-tape the board.
+    img(src="linetest_1.jpg", alt="")
+
+    p At this poiny I need to move on, because of time/logistics contraints, to the boards themselve. Later I come back for a follow up try, with the board properly taped, the process works alright.
+    img(src="linetest_2.jpg", alt="")
+    img(src="linetest_3.jpg", alt="")
+
+
+    h2 Building the programmer board
+    p For this part of the assignment, I followed <a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html">Brian's excellent tutorial</a> to build an AVR ISP programmer.
+
+    p Once again, we use mods to create the code for our milling machine:
+    img(src="isp_mods_1.jpg", alt="")
+    img(src="isp_mods_2.jpg", alt="")
+
+    p We load the program and start milling the first board, which turns out pretty good:
+    img(src="board_milling_1.jpg", alt="")
+    img(src="board_milling_2.jpg", alt="")
+    img(src="board_milling_3.jpg", alt="")
+
+    p I foresee soldering won't be easy, so we make a few boards just in case. However, we ran into the same issue as with the testing pattern, with the board not lying flat on the surface:
+    img(src="board_milling_4.jpg", alt="")
+
+    p After re-taping the board, I create a few of extra boards. Thankfully only a couple of them will be necessary :)
+    img(src="board_milling_5.jpg", alt="")
+
+    h2 Soldering the components, Part I
+    p The first thing I do is to check for continuity in the board, making sure current will flow with no problem.
+    img(src="continuity_test.jpg", alt="")
+
+    p I had never soldered surface mount components, only through-hole, so the first try is rather embarrasing :D
+    img(src="soldering_1.jpg", alt="")
+
+    p Moreover, I break the lines when trying to de-solder the chip to reposition it for a better fit.
+    img(src="soldering_2.jpg", alt="")
+
+    p To wrap this first round of soldering, for the life of me I can't see the lines in the zener diodes
+    img(src="zener_lines.jpg", alt="")
+    
+    p I was happy for how the board turned today with the CNC, but soldering was not a good experience!
+
+    h2 Soldering the components, Part II
+    p Alex, my local instructor, helped me with some small changes for the second sessions of soldering that really made a difference.
+    ul
+      li Thinner solder. The one I was using was just to thick and even a drop was too much for the surface mount components.
+      li Thinner tip on the soldering iron. Another thing that made a huge impact.
+      li Another major paint point was that the board itself moved as I was trying to solder components on top. Just softly fixing it to the table with wrapped-around tape made things so much easier.
+
+    p Withn all these small but important changes, I was already doing so much better, as we can see in the laying of these pads:
+    img(src="soldering_3.jpg", alt="")
+
+    p I ended up adding extra soldering in the USB connecting lanes. Here's the final board (after set up, hence the jumper-cut)
+    img(src="soldering_4.jpg", alt="")
+
+    p I did a quick continuity and resistor test with the multi-meter and finally pluggeg it in. Lights on!
+    img(src="soldering_check.jpg", alt="")
+
+    h2 Setting up the programmer
+    p So I have a fairly new MacBook Pro, so I downloaded CrossPack as recommended on Brian's tutorial, mentioned above. However, although installation went fine, I notice the package hadn't been updated for years. Unsurprisingly, "make" didn't work and threw a "Bad CPU type in executable". I looked and asked around, but to no avail.
+    img(src="mac_fail.jpg", alt="")
+
+    p I've been pondering moving to Linux for a while, so I had a couple of virtual machines available. I decided to go that way. In linux-land, I installed the toolchain without hiccups:
+    img(src="toolchain.jpg", alt="")
+
+    p Two set up the new board, it needs to be flashed through a previous programmer which connects to the computer, connected to the new board (powered elsewhere) with a parallel cable. 
+    img(src="boards_connected.jpg", alt="")
+
+    p To help the board stick in the USB jack, I put a bit of folded paper. However, later I also made the mistake of taking all four pins connection just because the light turned on. It was necessary to double check all usb lanes where in fact making connectiong. I plan on printing a 3D shell to hold the board and prevent these errors.
+    img(src="folded_paper.jpg", alt="")
+
+
+    p I was worried the VM wouldn't access the USB "mother" board (the original programmer to flash mine), but it turned out not to be much of an issue. Instructing VirtualBox to pass onto Linux was enough.
+    img(src="usb_pass.jpg", alt="")
+
+    p Then it was a matter of downloading the firmware and going though each step of the flashing:
+    img(src="programming_1.jpg", alt="")
+    img(src="programming_2.jpg", alt="")
+    img(src="programming_3.jpg", alt="")
+
+    p Once flashed, I connected both board to the computer to check whether the host recognised it:
+    img(src="both_boards.jpg", alt="")
+
+    p Then it was time for the final programming step
+    img(src="programming_4.jpg", alt="")
+
+    p And cutting the jumper
+    img(src="jumper_cut.jpg", alt="")
+
+
+
+
+
+
+
+
+

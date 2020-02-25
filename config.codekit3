@@ -94,8 +94,18 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/public/pages/W3/index.html",
-		"oF": 0,
+		"oAP": "/public/W3/index.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"/_/pages/W4/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/W4/index.html",
+		"oF": 2,
 		"oS": 0
 		},
 	"/public": {
