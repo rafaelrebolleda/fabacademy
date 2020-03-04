@@ -103,10 +103,19 @@ block main
     h3 Anisotropy
     img(src="sm_anisotropy.jpg", alt="")
 
-
-
-
     h3 Thoughts on the different printers
-    p I have to say I came surprisingly happy with my purchase of the Snap Maker. It has proven to almost always produce better results, faster and more reliably than the other ones that I tried for the assignment. I thoigh it'd be more of a hobbyist toy, but now I can see I can use it for more things, not to mention the eye-opening CNC carving of PCBs that I can also do with it!
+    p I have to say I came surprisingly happy with my purchase of the Snap Maker. It has proven to almost always produce better results, faster and more reliably than the other ones that I tried for the assignment. I thought it'd be more of a hobbyist toy, but now I can see I can use it for more things, not to mention the eye-opening CNC carving of PCBs that I can also do with it!
 
-    //-- h2 3D Printing: Model
+    h2 3D Printing: Model
+    p The idea is to do a a very simple proof od concept with two solids in a disposition that would be very complicated to achieve by substractive means. In this case, a sphere within a cube.
+    img(src="cubesphere.jpg", alt="")
+    p Fusion likes to take its sweet little time to cloud-export to STL a simple file like this... like MINUTES!
+    img(src="export.jpg", alt="")
+
+    p The first try is optimistic, with no supports. Perhaps unsurprisingly, It doesn't work:
+    video(src="nosupport.mp4", type="video/mp4", controls="true")
+
+    p Next try with light support for the sehere and the cube. I'm doubtful about the removal of all of it...
+    img(src="sm_cubesphere_1.jpg", alt="")
+
+
