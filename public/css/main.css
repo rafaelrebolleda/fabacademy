@@ -98,6 +98,9 @@ main h2 {
   margin: 20px 0 10px 0;
   color: #f2545b;
 }
+main h3 {
+  margin: 15px 0 10px 0;
+}
 main p {
   margin: 15px 0 10px 0;
   line-height: 150%;
@@ -109,7 +112,8 @@ main ul li {
   margin-bottom: 7px;
   line-height: 170%;
 }
-main img {
+main img,
+main video {
   width: 650px;
   margin-bottom: 20px;
 }

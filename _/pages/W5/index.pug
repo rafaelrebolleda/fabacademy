@@ -1,0 +1,91 @@
+extends ../../layouts/main.pug
+
+block main
+  main
+    h1 W5: 3D Scanning + Printing
+    h2 3D Scannning
+    p 3D scanning seems like a pretty straightforward task, but like so many other things, it requires a thoughtful apporach. What you think is the whole task is actually just tge beginnnig.
+
+    p This is the device we have at the lab, an Artec 3D:
+    img(src="scan_1.jpg", alt="")
+    img(src="scan_2.jpg", alt="")
+
+    p White surfaces work better than darker ones, so we tried something that we thought might be manageable, like a small remote clicker on an improvised stand.
+    img(src="clicker.jpg", alt="")
+
+    p We give it a go by scanning around the object. The software on the computer informs what the best scanning distance, but the white table doesn't help, plus it's hard to scan the back.
+    video(src="scanvid.mp4", type="video/mp4", controls="true")
+
+    p The results are not very good, and we're not comfortable with the set-up, so we try something different. In the lab there's a bike helmet laying around, so we give that a try. To scan all sides, we improvise a rotating stand with a stool.
+    img(src="scan_3.jpg", alt="")
+
+    p In this case, we keep the scanner mostly in the same positions, making sure we're keeping the recommended distance and angle by the sofrware.
+    img(src="scan_6.jpg", alt="")
+    img(src="scan_7.jpg", alt="")
+
+    p The scanning process is fairly fast, so now we have to clean the mess[h]. The sfotware makes it fairly easy with a range of 2D and 3D selection tools.
+    img(src="scan_8.jpg", alt="")
+    img(src="scan_9.jpg", alt="")
+    img(src="scan_10.jpg", alt="")
+
+    p From there on, it's a reasonable wizard-style process with just a few parameters to configure.
+    img(src="scan_11.jpg", alt="")
+    img(src="scan_12.jpg", alt="")
+    img(src="scan_13.jpg", alt="")
+    img(src="scan_14.jpg", alt="")
+
+    p Here's the "final" product. Of course, in a real case scenario, we would probably go back to tweak the cleaning and the closing of surfaces.
+    img(src="scan_15.jpg", alt="")
+
+
+    h2 3D Printing: Design Rules
+    p I tried three different printers to compare some of the design rules for this assignment:
+    ul
+      li A <a href="https://www.snapmaker.com/product">Snap-Maker</a> that I had bought a couple of years ago to mess around and that was actually sitting in a box :(
+      li A <a href="https://zortrax.com/3d-printers/m200-plus/">Zortrax M200</a>
+      li A <a href="https://www.tiertime.com/up-plus-2/">Tiertime UP Plus 2</a>. "Timeless reliability"... oh, well :D
+    
+    h3 Wall Thickness
+    p Here's the Snap Maker
+    img(src="sm_thickness.jpg", alt="")
+    p And here's the Zortrax
+    img(src="z_thickness.jpg", alt="")
+
+    h3 Clearance
+    p In this case, the Snap Maker failed me... or maybe I failed her with not enough glue, heating and rafting. Everything was going smoothly but sadly the piece dettached halfway through.
+    video(src="sm_clearance.mp4", type="video/mp4", controls="true")
+
+    p The Zortrax did complete the job had also had better defaults for support, although the quality overall is a bit rough
+    img(src="z_clearance_1.jpg", alt="")
+    img(src="z_clearance_2.jpg", alt="")
+
+    h3 Angle
+    img(src="sm_angle_1.jpg", alt="")
+    img(src="sm_angle_2.jpg", alt="")
+    img(src="z_angle.jpg", alt="")
+
+    h3 Bridging
+    p This is the only test we could ever complete on the Tiertime UP. Very, very unreliable machines... the lab has quite a few of them and there was always some issue. most tests just didn't run, the extruder wouldn't work, it would randomly stop half-way through, etc. 
+    p A big learning is that 3D printing amplifies frustration, as everything takes a lot of time and errors amount to a lot of wasted time.
+    img(src="up_bridging.jpg", alt="")
+
+    h3 Overhang
+    p In this example we can see again a different approach to supports between the Snap Maker and the Zortrax
+    img(src="sm_overhang.jpg", alt="")
+    img(src="z_overhang.jpg", alt="")
+
+
+
+    h3 Dimensions
+
+    h3 Anisotropy
+
+    h3 Surface finish
+
+    h3 Infill
+
+
+    h3 Thoughts on the different printers
+    p I have to say I came surprisingly happy with my purchase of the Snap Maker. It has proven to almost always produce better results, faster and more reliably than the other ones that I tried for the assignment. I thoigh it'd be more of a hobbyist toy, but now I can see I can use it for more things, not to mention the eye-opening CNC carving of PCBs that I can also do with it!
+
+    //-- h2 3D Printing: Model
