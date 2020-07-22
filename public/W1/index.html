@@ -21,16 +21,104 @@
     </header>
     <ol>
       <li><a href="../">About me</a></li>
-      <li><a href="../W1/">W1: Project Mgnt.</a></li>
-      <li><a href="../W2/">W2: CAD</a></li>
-      <li><a href="../W3/">W3: CCC</a></li>
-      <li><a href="../W4/">W4: Electronic Prod.</a></li>
-      <li><a href="../W5/">W5: 3D Scan + Printing</a></li>
+      <li><a href="../W1/">Final Project</a></li>
+      <li><a href="../W2/">CAD</a></li>
+      <li><a href="../W3/">CCC</a></li>
+      <li><a href="../W4/">Electronic Prod.</a></li>
+      <li><a href="../W5/">3D Scan + Printing</a></li>
     </ol>
   </nav>
   <main>
-    <h1>Final Project</h1>
-    <p>I approach Fab Academy as a means to <b>prototype as many ideas as I can around around the theme presented above.</b>, as well as aqcuiring new skills to flesh them out beyond the notebook.</p>
+    <h1>The <em>new</em> Final Project</h1>
+    <p>With the pandemic still ongoing, I've found myself in July still with limited access to the Fab Lab, so in accordance with my mentor, we've decided to take a different approach to how I thought the Fab Academy would unfold. To that extent, we've come up with a new final project that will make the most of the assignments, specially using the machine as part of it.</p>
+    <h2>Background</h2>
+    <p>Light-painting is an art form which consists taking pictures of moving light, capturing the traces as it moves in space.</p>
+    <p>I've doing light-painting photogrpah for a while, in a very rudimentary way.</p>
+    <p>This is my set up: a dark background in a closet. This is actually the same room and spot from which I've had to connect sometimes throughout the pandemic confinement!</p><img src="_Escenario.jpg" alt="">
+    <p>And this are the lights I've used: kids toys and a laser pointer.</p><img src="_Iluminación.jpg" alt="">
+    <p>These are just a couple of shots with this set up:</p><img src="Dracarys.jpg" alt=""><img src="Rock.jpg" alt="">
+    <h2>Other projects</h2>
+    <p>I've seen there have been some other projects around light painting in Fab Academy. For example <a href="http://archive.fabacademy.org/archives/2017/fablabhornafjordur/students/201/week11.html">this one</a> made during Fab Academy 2017 by Ana Cabral, Ola Mirecka and Birkir Thor:</p><iframe src="https://player.vimeo.com/video/213813915" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <p>Or <a href="http://fab.cba.mit.edu/classes/863.17/Harvard/machines/index.html">this one</a>, which is somewhat similar:</p>
+    <video src="http://fab.cba.mit.edu/classes/863.17/Harvard/machines/photos/programming/14.mp4" loop autoplay muted></video>
+    <p>What I'm thinking of is something different, though.</p>
+    <h2>Project Overview</h2>
+    <p>For this project, I'm looking to create a machine that does something similar to another shot of mine, albeit in a more portable studio with more interesting possibilities.</p><img src="eMotion.jpg" alt="">
+    <p>In short, the idea to make <strong>a closed box with moving lights create pseudo-random light-paintings via long exposure shots</strong>.</p><img src="box.jpg" alt="">
+    <p>The box will be completely black inside, and has a few small opening for a mobile camera phone to see thorugh. The faces will be covered in velcro to allow for easy attachment.</p>
+    <p>Inside, concentric circles with LEDs will spin and their traces will be captured. Both LED behaviour and <em>some aspects</em> of the movement can be programmed and or controlled.</p>
+    <p>Each circle could have up to four LEDs, as seen in the cross-section below, although that's probably not necessary to creat interesting effects, and could be a power consumption hurdle.</p><img src="pixels.jpg" alt="">
+    <p>The movement behaviour should be something similar to this example:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/t1JNWnTpmkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>So, ideally, we would have a step motor at the base, controlling the outer circle's rotation, and the one nested inside would spin freely.</p>
+    <h2>Potential Challenges</h2>
+    <p>The main challenge seems to be to pass information and power through the spinning axis, both in between circles and down to the main board after the main motor.</p>
+    <p>We've got a couple of ideas of how to go about it, based on good old LPs.</p><img src="LP1.jpg" alt=""><img src="LP2.jpg" alt="">
+    <p>We've also given some thought on how to manufacture some of these pieces with a combinations of 3D printing, small ball bearings and a few  hacks:</p><img src="rings.jpg" alt="">
+    <p>It also seems these devices are <a href="https://www.adafruit.com/product/775">also available</a> (d'oh), so it might be worth exploring the differences between the approaches.</p><img src="https://cdn-shop.adafruit.com/970x728/775-01.jpg" alt="">
+    <p>Some thought has been given to easier, linear approaches, but the results are different, closer to the examples shown above from previous years:</p><img src="alternative1.jpg" alt=""><img src="alternative2.jpg" alt="">
+    <h2>In relation to the assignments</h2>
+    <p>In general terms, these are the main parts of the project machine and how they relate to the relevant assignments. Of course other topics will impact the project too :)</p>
+    <h3>Computer Aided Design</h3>
+    <ul>
+      <li>Try some new 3D software</li>
+      <li>Model de box</li>
+      <li>Model smaller pieces (gears, washers, strips, etc.)</li>
+    </ul>
+    <h3>Computer Controlled Cutting</h3>
+    <ul>
+      <li>Produce smaller pieces like gears</li>
+      <li>Vynil stickers for the control panel</li>
+      <li>Decorative engravings and stickers</li>
+    </ul>
+    <h3>3D printing</h3>
+    <ul>
+      <li>Produce supporting pieces to hold the machine</li>
+      <li>Produce smaller mechanical pieces</li>
+    </ul>
+    <h3>Electronics Design</h3>
+    <ul>
+      <li>Try different electronics design softwares</li>
+      <li>Design and build a custom FabKit that will be the brain of the machine</li>
+    </ul>
+    <h3>Computer Controlled Machining</h3>
+    <ul>
+      <li>Produce the box that will hold the machine</li>
+    </ul>
+    <h3>Embedded Programming</h3>
+    <ul>
+      <li>Programming the FabKit for the machine's purposes</li>
+    </ul>
+    <h3>input Devices</h3>
+    <ul>
+      <li>Create the physical interface for the machine to select different programs, turn on and off strips of leds and manually spin it.</li>
+    </ul>
+    <h3>Output Devices</h3>
+    <ul>
+      <li>Feedback from the interface to the user</li>
+      <li>Motor</li>
+      <li>LEDs</li>
+    </ul>
+    <h3>Moulding and Casting</h3>
+    <ul>
+      <li>Create custom knobs for the potentiometers in the interface</li>
+    </ul>
+    <h3>Embedded Network and Communications</h3>
+    <ul>
+      <li>Interface with neopixels</li>
+      <li>Interface with the motor</li>
+      <li>Interface with the machine over Bluetooth</li>
+    </ul>
+    <h3>Interface & applicacion programming</h3>
+    <ul>
+      <li>Create a digital UI for the machine</li>
+    </ul>
+    <h3>Machine Design</h3>
+    <ul>
+      <li>The light-painting machine described above :)</li>
+    </ul><hr>
+    <h1>Previously, in a pre-pandemic life...</h1>
+    <p>(These were my original thoughts about the final project, but in light of the pandemic and associated restrictions, we thought it lacked focus and "tightness". I will have to follow up on this later on :)</p>
+    <p>I approach Fab Academy as a means to <b>prototype as many ideas as I can around around the theme presented below.</b>, as well as aqcuiring new skills to flesh them out beyond the notebook.</p>
     <p>To that extent, I foresee the final project taking shape as we advance through the program and I see how the learnings can be applied to my interests, by then doing self-contained micro-projects for each assignment. It's a somewhat similar approach to the one described in picture below (don't know who to credit it to!)</p><img src="process.png" alt="">
     <p>Similar to the process described above, there's an underlying theme that connects all products, but these are actually all different, not necessarily part of a bigger project.</p>
     <h1>Final project ideas</h1>

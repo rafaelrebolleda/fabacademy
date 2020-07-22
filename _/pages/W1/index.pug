@@ -2,8 +2,139 @@ extends ../../layouts/main.pug
 
 block main
   main
-    h1 Final Project
-    p I approach Fab Academy as a means to <b>prototype as many ideas as I can around around the theme presented above.</b>, as well as aqcuiring new skills to flesh them out beyond the notebook.
+    h1 The <em>new</em> Final Project
+    p With the pandemic still ongoing, I've found myself in July still with limited access to the Fab Lab, so in accordance with my mentor, we've decided to take a different approach to how I thought the Fab Academy would unfold. To that extent, we've come up with a new final project that will make the most of the assignments, specially using the machine as part of it.
+
+    h2 Background
+    p Light-painting is an art form which consists taking pictures of moving light, capturing the traces as it moves in space.
+    p I've doing light-painting photogrpah for a while, in a very rudimentary way.
+    p This is my set up: a dark background in a closet. This is actually the same room and spot from which I've had to connect sometimes throughout the pandemic confinement!
+    img(src="_Escenario.jpg", alt="")
+
+    p And this are the lights I've used: kids toys and a laser pointer.
+    img(src="_Iluminación.jpg", alt="")
+    
+    p These are just a couple of shots with this set up:
+    img(src="Dracarys.jpg", alt="")
+    img(src="Rock.jpg", alt="")
+
+    h2 Other projects
+    p I've seen there have been some other projects around light painting in Fab Academy. For example <a href="http://archive.fabacademy.org/archives/2017/fablabhornafjordur/students/201/week11.html">this one</a> made during Fab Academy 2017 by Ana Cabral, Ola Mirecka and Birkir Thor:
+
+    <iframe src="https://player.vimeo.com/video/213813915" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+    p Or <a href="http://fab.cba.mit.edu/classes/863.17/Harvard/machines/index.html">this one</a>, which is somewhat similar:
+
+    video(src="http://fab.cba.mit.edu/classes/863.17/Harvard/machines/photos/programming/14.mp4" loop autoplay muted)
+
+    p What I'm thinking of is something different, though.
+
+    h2 Project Overview
+    p For this project, I'm looking to create a machine that does something similar to another shot of mine, albeit in a more portable studio with more interesting possibilities.
+    img(src="eMotion.jpg", alt="")
+
+    p In short, the idea to make <strong>a closed box with moving lights create pseudo-random light-paintings via long exposure shots</strong>.
+
+    img(src="box.jpg", alt="")
+
+    p The box will be completely black inside, and has a few small opening for a mobile camera phone to see thorugh. The faces will be covered in velcro to allow for easy attachment.
+
+    p Inside, concentric circles with LEDs will spin and their traces will be captured. Both LED behaviour and <em>some aspects</em> of the movement can be programmed and or controlled.
+    
+    p Each circle could have up to four LEDs, as seen in the cross-section below, although that's probably not necessary to creat interesting effects, and could be a power consumption hurdle.
+    img(src="pixels.jpg", alt="")
+
+    
+    p The movement behaviour should be something similar to this example:
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t1JNWnTpmkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    p So, ideally, we would have a step motor at the base, controlling the outer circle's rotation, and the one nested inside would spin freely.
+
+    h2 Potential Challenges
+    p The main challenge seems to be to pass information and power through the spinning axis, both in between circles and down to the main board after the main motor.
+
+    p We've got a couple of ideas of how to go about it, based on good old LPs.
+    img(src="LP1.jpg", alt="")
+    img(src="LP2.jpg", alt="")
+
+    p We've also given some thought on how to manufacture some of these pieces with a combinations of 3D printing, small ball bearings and a few  hacks:
+    img(src="rings.jpg", alt="")
+
+    p It also seems these devices are <a href="https://www.adafruit.com/product/775">also available</a> (d'oh), so it might be worth exploring the differences between the approaches.
+    img(src="https://cdn-shop.adafruit.com/970x728/775-01.jpg", alt="")
+
+    p Some thought has been given to easier, linear approaches, but the results are different, closer to the examples shown above from previous years:
+    img(src="alternative1.jpg", alt="")
+    img(src="alternative2.jpg", alt="")
+
+    h2 In relation to the assignments
+    p In general terms, these are the main parts of the project machine and how they relate to the relevant assignments. Of course other topics will impact the project too :)
+
+    h3 Computer Aided Design
+    ul
+      li Try some new 3D software
+      li Model de box
+      li Model smaller pieces (gears, washers, strips, etc.)
+
+    h3 Computer Controlled Cutting
+    ul
+      li Produce smaller pieces like gears
+      li Vynil stickers for the control panel
+      li Decorative engravings and stickers
+
+    h3 3D printing
+    ul
+      li Produce supporting pieces to hold the machine
+      li Produce smaller mechanical pieces
+
+    h3 Electronics Design
+    ul
+      li Try different electronics design softwares
+      li Design and build a custom FabKit that will be the brain of the machine
+
+    h3 Computer Controlled Machining
+    ul
+      li Produce the box that will hold the machine
+
+    h3 Embedded Programming
+    ul
+      li Programming the FabKit for the machine's purposes
+
+    h3 input Devices
+    ul
+      li Create the physical interface for the machine to select different programs, turn on and off strips of leds and manually spin it.
+
+    h3 Output Devices
+    ul
+      li Feedback from the interface to the user
+      li Motor
+      li LEDs
+
+    h3 Moulding and Casting
+    ul
+      li Create custom knobs for the potentiometers in the interface
+
+    h3 Embedded Network and Communications
+    ul
+      li Interface with neopixels
+      li Interface with the motor
+      li Interface with the machine over Bluetooth
+
+    h3 Interface & applicacion programming
+    ul
+      li Create a digital UI for the machine
+
+    h3 Machine Design
+    ul
+      li The light-painting machine described above :)
+
+
+    <hr>
+    h1 Previously, in a pre-pandemic life...
+    p (These were my original thoughts about the final project, but in light of the pandemic and associated restrictions, we thought it lacked focus and "tightness". I will have to follow up on this later on :)
+
+    p I approach Fab Academy as a means to <b>prototype as many ideas as I can around around the theme presented below.</b>, as well as aqcuiring new skills to flesh them out beyond the notebook.
     p To that extent, I foresee the final project taking shape as we advance through the program and I see how the learnings can be applied to my interests, by then doing self-contained micro-projects for each assignment. It's a somewhat similar approach to the one described in picture below (don't know who to credit it to!)
     img(src="process.png", alt="")
     p Similar to the process described above, there's an underlying theme that connects all products, but these are actually all different, not necessarily part of a bigger project.
