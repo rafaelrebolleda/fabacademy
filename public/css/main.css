@@ -20,11 +20,12 @@ summary {
   display: block;
 }
 body {
+  position: relative;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 nav {
-  position: fixed;
+  position: absolute;
   width: 270px;
   height: 100%;
   padding: 20px 20px 20px 50px;
@@ -58,7 +59,7 @@ nav ol {
   clear: both;
   margin-top: 25px;
   list-style-type: none;
-  width: 270px;
+  width: 290px;
 }
 nav ol li {
   position: relative;
@@ -67,15 +68,23 @@ nav ol li {
   transform: rotate(-1deg);
 }
 nav ol li a {
-  padding: 5px 25px;
+  padding: 5px 15px;
   text-decoration: none;
   background-color: #ec0;
   color: #3c3744;
   text-transform: capitalize;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  font-size: 16px;
-  box-shadow: 3px 3px 1px;
+  font-size: 14px;
+  box-shadow: 3px 3px 1px #3c3744;
+}
+nav ol li a.red {
+  color: #fff;
+  background-color: #f2545b;
+}
+nav ol li a.blue {
+  color: #fff;
+  background-color: #00b5ac;
 }
 main {
   width: 700px;
@@ -105,12 +114,46 @@ main p {
   margin: 15px 0 10px 0;
   line-height: 150%;
 }
-main ul {
+main code {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #eee;
+}
+main ul,
+main ol {
   margin: 10px 0 20px 40px;
 }
-main ul li {
+main ul li,
+main ol li {
   margin-bottom: 7px;
   line-height: 170%;
+}
+main div.checklist {
+  margin-top: 40px;
+  padding: 2px 20px 20px 20px;
+  background-color: #fdfda5;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #999;
+}
+main div.checklist ol {
+  list-style-type: none;
+  margin: 20px 0 0 15px;
+}
+main div.checklist ol li:before {
+  content: "\2610";
+  padding-right: 5px;
+  font-size: 18px;
+}
+main div.checklist ol li.done:before {
+  content: "\2714";
+  padding-right: 5px;
+  color: #73c991;
+}
+main div.checklist ol li.scrapped:before {
+  content: "\2717";
+  padding-right: 5px;
+  color: #cc3e44;
 }
 main img,
 main video {

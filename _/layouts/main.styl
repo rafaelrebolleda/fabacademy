@@ -23,15 +23,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block
 
 body 
+  position: relative
   font-family: Helvetica, Arial, sans-serif
   font-size: 14px
 
 nav 
-  position: fixed
+  position: absolute
   width: 270px 
   height: 100%
   padding: 20px 20px 20px 50px 
   background: #E9E9E9 url("../images/lines.gif") repeat-y
+  
 
   header 
     img#avatar 
@@ -61,7 +63,7 @@ nav
     clear: both
     margin-top: 25px
     list-style-type: none
-    width: 270px
+    width: 290px
 
     li 
       position: relative
@@ -70,15 +72,24 @@ nav
       transform: rotate(-1deg)
 
       a
-        padding: 5px 25px
+        padding: 5px 15px
         text-decoration: none
         background-color: $yellow
         color: $grey
         text-transform: capitalize
         font-family:'Courier New', Courier, monospace
         font-weight: bold;
-        font-size: 16px
-        box-shadow: 3px 3px 1px
+        font-size: 14px
+        box-shadow: 3px 3px 1px $grey
+      
+      a.red
+        color: white
+        background-color: $red 
+
+      a.blue
+        color: white
+        background-color: $blue 
+
 
 
 main
@@ -108,14 +119,46 @@ main
   p 
     margin: 15px 0 10px 0
     line-height: 150%
-
-  ul 
+  
+  code
+    display: block
+    margin: 10px 0
+    padding: 10px
+    background-color: #EEE
+    
+  ul, ol 
     margin: 10px 0 20px 40px
 
     li 
       margin-bottom: 7px
       line-height: 170%
 
+  div.checklist
+    margin-top: 40px
+    padding: 2px 20px 20px 20px
+    background-color: #FDFDA5
+    border-radius: 10px
+    box-shadow: 5px 5px 5px #999
+
+    ol
+      list-style-type: none
+      margin: 20px 0 0 15px
+
+      li:before
+        content: "\2610";
+        padding-right: 5px
+        font-size: 18px
+
+      li.done:before
+        content: "\2714";
+        padding-right: 5px
+        color: #73C991
+
+      li.scrapped:before
+        content: "\2717";
+        padding-right: 5px
+        color: #CC3E44
+   
   img, video 
     width: 650px
     margin-bottom: 20px

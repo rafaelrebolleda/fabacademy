@@ -25,6 +25,16 @@
 		"oAP": "/public/.gitlab-ci.yml",
 		"oF": 1
 		},
+	"/_/about.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/about.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/_/index.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -66,6 +76,16 @@
 		"oA": 1,
 		"oAP": "/public/modules/head.html",
 		"oF": 1,
+		"oS": 0
+		},
+	"/_/pages/FP/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/FP/index.html",
+		"oF": 2,
 		"oS": 0
 		},
 	"/_/pages/W1/index.pug": {
