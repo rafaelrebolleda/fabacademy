@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title> Rafael Rebolleda — Fab Academy 2020 Documentation</title>
+  <!-- Google Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran&amp;display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body> 
+  <nav>
+    <header><img id="avatar" src="../images/rrm.jpg" alt="Rafael Rebolleda">
+      <ul>
+        <li>Rafael Rebolleda</li>
+        <li>ESNE + LEON</li>
+        <li>Madrid, Spain</li>
+      </ul>
+      <p class="bio">Human Centric Research & Innovation consultant and professor. Also looking for PhD opportunities!</p>
+    </header>
+    <ol>
+      <li><a class="red" href="../">About me</a></li>
+      <li><a href="../W1/">Principles & Practices</a></li>
+      <li><a href="../W2/">Computer Aided Design</a></li>
+      <li><a href="../W3/">Computer Controlled Cutting</a></li>
+      <li><a href="../W4/">Electronics Production</a></li>
+      <li><a href="../W5/">3D Scan + Printing</a></li>
+      <li><a href="../W6/">Electronics Design</a></li>
+    </ol>
+  </nav>
+  <main>
+    <h1>W6: Electronics Design</h1>
+    <p>For this assignment I discussed with my local instructor and my mentor Nuria at Fab Lab Leon the possibility to design a mix of a hello board and a fabkit that I could later use for my final project. The Hello Fabkit was born :)</p>
+    <p>I based my work on <a href="http://fabacademy.org/archives/2015/doc/projects/fabkit-0.4.html">this document</a>, which described a fabkit v 0.4 that seemed to be very popular in previous Fab Academy cycles:</p><img src="http://fabacademy.org/archives/2015/doc/projects/images/fabkitv04.jpg" alt="">
+    <p>I did however find many dead ends along the way. These are just a handful:</p><img src="403_1.jpg" alt=""><img src="403_2.jpg" alt=""><img src="404.jpg" alt="">
+    <h2>Group Assignment</h2>
+    <p>I'm on my own so for the group assignment I leaned on my trusty multimeter. I use it all the time to check continuity and voltage.</p><img src="multimeter.jpg" alt="">
+    <h2>The Design</h2>
+    <p>The idea was to extend the previous design and make room for an extra button and LED that would play the role of the hello board. I was also struck by the number of sharp turns in the previous design, so I wanted to make softer turns if possible.</p>
+    <p>The board is based around the ATMEGA 328P:</p><img src="pinout.jpg" alt=""><img src="schematic.jpg" alt="">
+    <p>And here we can see the layout:</p><img src="layout.jpg" alt="">
+    <p>And from the layot to the traces. I added the text to the PNG directly, seeing that the type size would match the track's width.</p><img src="Hello_Fabkit.png" alt="">
+    <h2>Milling the board</h2>
+    <p>We have a Roland MDX-40 at the lab, so this is what we're usign.</p><img src="paths.jpg" alt="">
+    <p>We didn't have the board propely leveled, so the first one failed:</p><img src="unfinished.jpg" alt="">
+    <p>The second one came out alright:</p><img src="board_1.jpg" alt="">
+    <h2>Soldering</h2>
+    <p>I did however ruined it early on by pulling the solder when it was attached to one of the chip's track. I decided to still use the board to practice and warm a bit:</p><img src="soldering_1.jpg" alt=""><img src="soldering_2.jpg" alt="">
+    <p>Soldering the chip was the one thing that really worried me, as it was really hard to desolder. It seemed to me at the time that this was the most difficult componet to solder. As we'll see I had to do a few board and it ended up being almost the easiest.</p>
+    <p>Anyway, my approach to chips so far had been to solder the tracks a bit and then try to put it on top. I decided to change the approach completely.</p>
+    <p>First, I carefully lined up the chip:</p><img src="soldering_3.jpg" alt="">
+    <p>I would then quite plainly tape it to the board:</p><img src="soldering_4.jpg" alt="">
+    <p>Then I woudl try a couple different approaches: just drop solder on top of it and the suck it out after the fact, which works mostly alright, or use a fine tip solerding iron and very thing solder to heat the junction of the track and the legs. It has worked mostly alright:</p><img src="soldering_5.jpg" alt="">
+    <p>I always check the boards for continuity befor esoldering, but that one ended up having some short apparetnly below the chip. I had a couple of spare ones, so I went with a new board.</p>
+    <p>Now, the thing that has been the most painful to solder, BY FAR, is the resonator. I tried adding solder below and on to the tracks... ultimately adding a bit of soldering iron to the sides and heating that as a proxy was the best approach.</p><img src="soldering_6.jpg" alt="">
+    <p>I continued soldering this board:</p><img src="soldering_7.jpg" alt="">
+    <p>Unfortunately, I made a mistake a put a 20 MHz resonator instead o 8 Mhz. Tried to desolder it, but damaged the tracks very badly and we couldn't get them back, so I went with a third board. I still had to recover the header pins, because I didn't have enough for a new board. It proved really hard to desolder without blowing the tracks. </p>
+    <p>Resoldering these new pins on the new board was more troublesome thah I expeceted, amd I learned to change the way I prepare the board for soldering. I used to lay down solder on the pads before installing components, but I've found that with SM the solder is too "bumpy" and irregular. After all teh practice with these boards, now I lay down solder maybe for one side of the component (say a resistor) but leave the other one clean, and solder it afterwards. These way it's easier to lay them flat. </p>
+    <p>So, as I was saying, resoldering some of these header pins had two issues: excess of existing solder would short other tracks nearby and was very hard to pump out, and the "bumps" would leave some pins floating in the air. It took a while to debug the latter:</p><img src="soldering_8.jpg" alt="">
+    <p>So, here's the final board with a couple of fixes:</p>
+    <ul> 
+      <li>A patch cable to fix a broken track below the header pins</li>
+      <li>Another track had to be "rebuilt" with a piece of cable and solder on the top-right corner of the top button</li>
+    </ul><img src="soldering_9.jpg" alt="">
+    <h2> Burning the bootloader</h2>
+    <p>Initial programming was done with <a href="../W4">the FabISP created in Electronics Production</a> together with the FTDI.</p><img src="programming_1.jpg" alt="">
+    <p>Once the bootloader was burned, I uploaded a simple double blink test:</p>
+    <video src="double_blink.mp4" autoplay loop mute></video>
+    <h3>Files</h3>
+    <ul>
+      <li><a href="hello_fabkit.zip">Eagle Project</a></li>
+    </ul>
+  </main>
+</body>

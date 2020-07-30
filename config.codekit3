@@ -138,6 +138,16 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"/_/pages/W6/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/W6/index.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"/public": {
 		"ft": 65536,
 		"oA": 1,
