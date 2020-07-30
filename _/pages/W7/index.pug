@@ -1,0 +1,59 @@
+extends ../../layouts/main.pug
+
+block main
+  main
+    h1 W7: Computer Controlled Machining
+    p During this assignment I want to make part of my machine and final project, namely the box that will hold it.
+    img(src="box.jpg", alt="")
+    
+    p I decided to go with AutoCAD this time, as I hadn't tried it before and it seemed like a simple project to try it out. I've found AutoCAD to have a pretty weird conceptual model for someone who comes from 2D, but it's very fast once you get the hang of it. Simmetry tools are pretty handy!
+
+    h2 Design
+    p So the first part is the top box:
+    img(src="software_1.jpg", alt="")
+
+    p My local instructor lends me a tip for introducing nicer, softer dogbones: rather than centering the circle on the corner, displace it by the radius. It's proven to work pretty well later on:
+    img(src="software_2.jpg", alt="")
+
+    p I also want to add a bit of decoration, so I import some text from Illustrator and create a few circles that follow up on theme of the machine. These will be carved on to the surface of each side. I may fill or paint them later if I have some time.
+    img(src="software_3.jpg", alt="")
+
+    h2 Preparing for machining
+    p The software to prepare the design for machining is VCarve, and it seems fairly simple. After importing the designs from AutoCAD it's a matter of selecting paths and instruct the machine to drill, follow a path, empty an area, etc. There are options for depth, speed, feed, rpms, tabs, etc. 
+    img(src="software_4.jpg", alt="")
+
+    p The software can simulate the machining process:
+    img(src="software_7.jpg", alt="")
+
+    p First of we'll drill the dogbones, and then run the paths around the outside so measures are kept. We try to make the most of the stock by using it's sides, although that requires very good alignment of the stock, which is typically a bit bent a needs taming:
+    img(src="stock_1.jpg", alt="")
+    img(src="stock_2.jpg", alt="")
+
+    p To make the most of the stock, we zero in with special care:
+    img(src="laser.jpg", alt="")
+    img(src="zero.jpg", alt="")
+
+    p We load the file with a USB pen drive into the machine:
+    img(src="interface.jpg", alt="")
+
+    video(src="machining.mp4" autoplay mute controls loop)
+
+    p There are a couple of hiccups of little importance along the way. For example, because some boards are particularly combed, the drill doesn't make it to the very end by a hair. In this case it's very easy to fix just with the cutter.
+    img(src="no_drill.jpg", alt="")
+    
+    p Another issue (my problem really) is to be careful and cut the tabs nicely before taking the piuece out of the stock. It didn't matter much in this case, but it could've been worse:
+    img(src="tabs.jpg", alt="")
+
+    h2 Assembling 
+    p Pieces come out a bit rough, so a bit of sanding around the edges and engravings leaves everything nicely finished.
+    img(src="sanding.jpg", alt="")
+
+    p Assembling everything together is rather easy. The box would probably hold itself with the pressure from the joints, but I add a bit of glue.
+    video(src="assembling.mp4" autoplay controls mute loop)
+
+    p The box is now ready for the next steps in building the machine for the final project :)
+    img(src="assembled.jpg", alt="")
+
+
+
+

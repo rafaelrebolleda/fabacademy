@@ -148,6 +148,16 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"/_/pages/W7/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/W7/index.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"/public": {
 		"ft": 65536,
 		"oA": 1,
