@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title> Rafael Rebolleda — Fab Academy 2020 Documentation</title>
+  <!-- Google Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran&amp;display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body> 
+  <nav>
+    <header><img id="avatar" src="../images/rrm.jpg" alt="Rafael Rebolleda">
+      <ul>
+        <li>Rafael Rebolleda</li>
+        <li>ESNE + LEON</li>
+        <li>Madrid, Spain</li>
+      </ul>
+      <p class="bio">Human Centric Research & Innovation consultant and professor. Also looking for PhD opportunities!</p>
+    </header>
+    <ol>
+      <li><a class="red" href="../">About me</a></li>
+      <li><a class="blue" href="../DEV/">Project Development</a></li>
+    </ol>
+    <h1>Assignments</h1>
+    <ol> 
+      <li><a href="../W1/">Principles & Practices</a></li>
+      <li><a href="../W2/">Computer Aided Design</a></li>
+      <li><a href="../W3/">Computer Controlled Cutting</a></li>
+      <li><a href="../W4/">Electronics Production</a></li>
+      <li><a href="../W5/">3D Scan + Printing</a></li>
+      <li><a href="../W6/">Electronics Design</a></li>
+      <li><a href="../W7/">Computer Controlled Machining</a></li>
+    </ol>
+  </nav>
+  <main>
+    <h1>Project Development</h1>
+    <p>These are the initial high-level thoughts about the project development. I foresee these will change rapidly in time, as it often happens as we learsn and, well, things happen :)</p>
+    <h2>Spiral 1: Ideation</h2>
+    <ol class="checklist"> 
+      <li class="done">Pitch the projects</li>
+      <li class="done">Learn from other projects in Fab Academy and elsewhere</li>
+      <li class="done">Look for potential challenges</li>
+      <li class="done">Check the availability of initial components</li>
+    </ol><img src="../W1/box.jpg" alt="">
+    <h3>Potential Challenges</h3>
+    <p>The main challenge seems to be to pass information and power through the spinning axis, both in between circles and down to the main board after the main motor.</p>
+    <p>We've got a couple of ideas of how to go about it, based on good old LPs.</p><img src="LP1.jpg" alt=""><img src="LP2.jpg" alt="">
+    <p>We've also given some thought on how to manufacture some of these pieces with a combinations of 3D printing, small ball bearings and a few  hacks:</p><img src="rings.jpg" alt="">
+    <p>It also seems these devices are <a href="https://www.adafruit.com/product/775">also available</a> (d'oh), so it might be worth exploring the differences between the approaches.</p><img src="https://cdn-shop.adafruit.com/970x728/775-01.jpg" alt="">
+    <h2>Spiral 2: Proof of concept</h2>
+    <ol class="checklist"> 
+      <li class="done">Design and build a FabKit</li>
+      <li class="done">Connect the LEDs and the motor</li>
+      <li class="done">Design a simple program to test control of all components</li>
+    </ol>
+    <p>The cornerstone of the project is the FabKit that will control all input and output, so this is where I'll put my initial efforts.</p>
+    <h3>Week Assignments used for the project</h3>
+    <ul>
+      <li><a href="../W6">W6: Electronics Design</a></li>
+      <li>Output</li>
+    </ul><img src="fabkit.jpg" alt="">
+    <video src="test_pixels.mp4" autplay muted controls loop></video>
+    <video src="test_motor.mp4" autplay muted controls loop></video>
+    <h2>Spiral 3: Design, build and test basic components</h2>
+    <ol class="checklist"> 
+      <li class="done">Design and build the box</li>
+      <li>Design and build the main circle</li>
+      <li>Design and build gears</li>
+    </ol>
+    <h3>Week Assignments used for the project</h3>
+    <ul>
+      <li><a href="../W6">W2: Computer Aided Design</a></li>
+      <li><a href="../W6">W6: Computer Controlled Machining</a></li>
+    </ul>
+    <video src="../W7/machining.mp4" autoplay mute controls loop></video><img src="../W7/assembled.jpg" alt="">
+    <h3>Iteration 4</h3>
+    <ul> 
+      <li>Communicate with the board over one spinning axis</li>
+      <li>Add some simple interface elements to control the machine</li>
+      <li>Consider adding a second, free spinning circle inside</li>
+      <li>Design and build the interface</li>
+    </ul>
+    <h3>Iteration 5</h3>
+    <ul> 
+      <li>Put everything together</li>
+      <li>Create and experiment with different light and movement programs</li>
+      <li>Add information and decoration stickers</li>
+      <li>Bluetooth Networking</li>
+    </ul>
+    <h2>In relation to the assignments</h2>
+    <p>In general terms, these are the main parts of the project machine and how they relate to the relevant assignments. Of course other topics will impact the project too :)</p>
+    <h3>Computer Aided Design</h3>
+    <ul>
+      <li>Try some new 3D software</li>
+      <li>Model de box</li>
+      <li>Model smaller pieces (gears, washers, strips, etc.)</li>
+    </ul>
+    <h3>Computer Controlled Cutting</h3>
+    <ul>
+      <li>Produce smaller pieces like gears</li>
+      <li>Vynil stickers for the control panel</li>
+      <li>Decorative engravings and stickers</li>
+    </ul>
+    <h3>3D printing</h3>
+    <ul>
+      <li>Produce supporting pieces to hold the machine</li>
+      <li>Produce smaller mechanical pieces</li>
+    </ul>
+    <h3>Electronics Design</h3>
+    <ul>
+      <li>Try different electronics design softwares</li>
+      <li>Design and build a custom FabKit that will be the brain of the machine</li>
+    </ul>
+    <h3>Computer Controlled Machining</h3>
+    <ul>
+      <li>Produce the box that will hold the machine</li>
+    </ul>
+    <h3>Embedded Programming</h3>
+    <ul>
+      <li>Programming the FabKit for the machine's purposes</li>
+    </ul>
+    <h3>input Devices</h3>
+    <ul>
+      <li>Create the physical interface for the machine to select different programs, turn on and off strips of leds and manually spin it.</li>
+    </ul>
+    <h3>Output Devices</h3>
+    <ul>
+      <li>Feedback from the interface to the user</li>
+      <li>Motor</li>
+      <li>LEDs</li>
+    </ul>
+    <h3>Moulding and Casting</h3>
+    <ul>
+      <li>Create custom knobs for the potentiometers in the interface</li>
+    </ul>
+    <h3>Embedded Network and Communications</h3>
+    <ul>
+      <li>Interface with neopixels</li>
+      <li>Interface with the motor</li>
+      <li>Interface with the machine over Bluetooth</li>
+    </ul>
+    <h3>Interface & applicacion programming</h3>
+    <ul>
+      <li>Create a digital UI for the machine</li>
+    </ul>
+    <h3>Machine Design</h3>
+    <ul>
+      <li>The light-painting machine described above :)</li>
+    </ul>
+  </main>
+</body>

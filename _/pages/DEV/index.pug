@@ -1,0 +1,138 @@
+extends ../../layouts/main.pug
+
+block main
+  main
+    h1 Project Development
+    p These are the initial high-level thoughts about the project development. I foresee these will change rapidly in time, as it often happens as we learsn and, well, things happen :)
+
+    h2 Spiral 1: Ideation
+    ol.checklist 
+      li.done Pitch the projects
+      li.done Learn from other projects in Fab Academy and elsewhere
+      li.done Look for potential challenges
+      li.done Check the availability of initial components
+    
+    img(src="../W1/box.jpg", alt="")
+    h3 Potential Challenges
+    p The main challenge seems to be to pass information and power through the spinning axis, both in between circles and down to the main board after the main motor.
+
+    p We've got a couple of ideas of how to go about it, based on good old LPs.
+    img(src="LP1.jpg", alt="")
+    img(src="LP2.jpg", alt="")
+
+    p We've also given some thought on how to manufacture some of these pieces with a combinations of 3D printing, small ball bearings and a few  hacks:
+    img(src="rings.jpg", alt="")
+
+    p It also seems these devices are <a href="https://www.adafruit.com/product/775">also available</a> (d'oh), so it might be worth exploring the differences between the approaches.
+
+    img(src="https://cdn-shop.adafruit.com/970x728/775-01.jpg", alt="")
+
+    
+    h2 Spiral 2: Proof of concept
+    ol.checklist 
+      li.done Design and build a FabKit
+      li.done Connect the LEDs and the motor
+      li.done Design a simple program to test control of all components
+    
+    p The cornerstone of the project is the FabKit that will control all input and output, so this is where I'll put my initial efforts.
+
+    h3 Week Assignments used for the project
+    ul
+      li: <a href="../W6">W6: Electronics Design</a>
+      li Output
+    img(src="fabkit.jpg", alt="")
+    video(src="test_pixels.mp4" autplay muted controls loop)
+    video(src="test_motor.mp4" autplay muted controls loop)
+
+    h2 Spiral 3: Design, build and test basic components
+    ol.checklist 
+      li.done Design and build the box
+      li Design and build the main circle
+      li Design and build gears
+
+    h3 Week Assignments used for the project
+    ul
+      li: <a href="../W6">W2: Computer Aided Design</a>
+      li: <a href="../W6">W6: Computer Controlled Machining</a>
+
+    video(src="../W7/machining.mp4" autoplay mute controls loop)
+    img(src="../W7/assembled.jpg", alt="")
+
+    
+    
+    
+
+    h3 Iteration 4
+    ul 
+      li Communicate with the board over one spinning axis
+      li Add some simple interface elements to control the machine
+      li Consider adding a second, free spinning circle inside
+      li Design and build the interface
+
+    h3 Iteration 5
+    ul 
+      li Put everything together
+      li Create and experiment with different light and movement programs
+      li Add information and decoration stickers
+      li Bluetooth Networking
+
+    h2 In relation to the assignments
+    p In general terms, these are the main parts of the project machine and how they relate to the relevant assignments. Of course other topics will impact the project too :)
+
+    h3 Computer Aided Design
+    ul
+      li Try some new 3D software
+      li Model de box
+      li Model smaller pieces (gears, washers, strips, etc.)
+
+    h3 Computer Controlled Cutting
+    ul
+      li Produce smaller pieces like gears
+      li Vynil stickers for the control panel
+      li Decorative engravings and stickers
+
+    h3 3D printing
+    ul
+      li Produce supporting pieces to hold the machine
+      li Produce smaller mechanical pieces
+
+    h3 Electronics Design
+    ul
+      li Try different electronics design softwares
+      li Design and build a custom FabKit that will be the brain of the machine
+
+    h3 Computer Controlled Machining
+    ul
+      li Produce the box that will hold the machine
+
+    h3 Embedded Programming
+    ul
+      li Programming the FabKit for the machine's purposes
+
+    h3 input Devices
+    ul
+      li Create the physical interface for the machine to select different programs, turn on and off strips of leds and manually spin it.
+
+    h3 Output Devices
+    ul
+      li Feedback from the interface to the user
+      li Motor
+      li LEDs
+
+    h3 Moulding and Casting
+    ul
+      li Create custom knobs for the potentiometers in the interface
+
+    h3 Embedded Network and Communications
+    ul
+      li Interface with neopixels
+      li Interface with the motor
+      li Interface with the machine over Bluetooth
+
+    h3 Interface & applicacion programming
+    ul
+      li Create a digital UI for the machine
+
+    h3 Machine Design
+    ul
+      li The light-painting machine described above :)

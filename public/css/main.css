@@ -160,6 +160,25 @@ main div.checklist ol li.scrapped:before {
   padding-right: 5px;
   color: #cc3e44;
 }
+main ol.checklist {
+  list-style-type: none;
+  margin: 20px 0 0 15px;
+}
+main ol.checklist li:before {
+  content: "\2610";
+  padding-right: 5px;
+  font-size: 18px;
+}
+main ol.checklist li.done:before {
+  content: "\2714";
+  padding-right: 5px;
+  color: #73c991;
+}
+main ol.checklist li.scrapped:before {
+  content: "\2717";
+  padding-right: 5px;
+  color: #cc3e44;
+}
 main img,
 main video {
   width: 650px;

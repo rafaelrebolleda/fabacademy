@@ -78,6 +78,16 @@
 		"oF": 1,
 		"oS": 0
 		},
+	"/_/pages/DEV/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/DEV/index.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"/_/pages/FP/index.pug": {
 		"cB": 0,
 		"cOD": 1,

@@ -21,6 +21,7 @@
     </header>
     <ol>
       <li><a class="red" href="../">About me</a></li>
+      <li><a class="blue" href="../DEV/">Project Development</a></li>
     </ol>
     <h1>Assignments</h1>
     <ol> 
@@ -76,108 +77,7 @@
     <p>Each circle could have up to four LEDs, as seen in the cross-section below, although that's probably not necessary to creat interesting effects, and could be a power consumption hurdle.</p><img src="pixels.jpg" alt="">
     <p>The movement behaviour should be something similar to this example:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/t1JNWnTpmkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>So, ideally, we would have a step motor at the base, controlling the outer circle's rotation, and the one nested inside would spin freely.</p>
-    <h2>Potential Challenges</h2>
-    <p>The main challenge seems to be to pass information and power through the spinning axis, both in between circles and down to the main board after the main motor.</p>
-    <p>We've got a couple of ideas of how to go about it, based on good old LPs.</p><img src="LP1.jpg" alt=""><img src="LP2.jpg" alt="">
-    <p>We've also given some thought on how to manufacture some of these pieces with a combinations of 3D printing, small ball bearings and a few  hacks:</p><img src="rings.jpg" alt="">
-    <p>It also seems these devices are <a href="https://www.adafruit.com/product/775">also available</a> (d'oh), so it might be worth exploring the differences between the approaches.</p><img src="https://cdn-shop.adafruit.com/970x728/775-01.jpg" alt="">
-    <p>Some thought has been given to easier, linear approaches, but the results are different, closer to the examples shown above from previous years:</p><img src="alternative1.jpg" alt=""><img src="alternative2.jpg" alt="">
-    <h2>Spirals</h2>
-    <p>These are the initial high-level thoughts about the project development. I foresee these will change rapidly in time, as it often happens as we learsn and, well, things happen :)</p>
-    <h3>Iteration 1</h3>
-    <ul> 
-      <li>Pitch the projects</li>
-      <li>Learn from other projects in Fab Academy and elsewhere</li>
-      <li>Look for potential challenges</li>
-      <li>Check the availability of initial components</li>
-    </ul>
-    <h3>Iteration 2</h3>
-    <ul> 
-      <li>Design and build a FabKit</li>
-      <li>Connect the LEDs and the motor</li>
-      <li>Design a simple program to test control of all components</li>
-    </ul>
-    <h3>Iteration 3</h3>
-    <ul> 
-      <li>Build the main circle</li>
-      <li>Mount the circle on the machine base</li>
-      <li>Communicate with the board over one spinning axis</li>
-      <li>Add some simple interface elements to control the machine</li>
-    </ul>
-    <h3>Iteration 4</h3>
-    <ul> 
-      <li>Consider adding a second, free spinning circle inside</li>
-      <li>Design and build the box</li>
-      <li>Design and build the interface</li>
-      <li>Test Bluetooth Networking</li>
-    </ul>
-    <h3>Iteration 5</h3>
-    <ul> 
-      <li>Put everything together</li>
-      <li>Create and experiment with different light and movement programs</li>
-      <li>Add information and decoration stickers</li>
-      <li>Wrap up Bluetooth interface</li>
-    </ul>
-    <h2>In relation to the assignments</h2>
-    <p>In general terms, these are the main parts of the project machine and how they relate to the relevant assignments. Of course other topics will impact the project too :)</p>
-    <h3>Computer Aided Design</h3>
-    <ul>
-      <li>Try some new 3D software</li>
-      <li>Model de box</li>
-      <li>Model smaller pieces (gears, washers, strips, etc.)</li>
-    </ul>
-    <h3>Computer Controlled Cutting</h3>
-    <ul>
-      <li>Produce smaller pieces like gears</li>
-      <li>Vynil stickers for the control panel</li>
-      <li>Decorative engravings and stickers</li>
-    </ul>
-    <h3>3D printing</h3>
-    <ul>
-      <li>Produce supporting pieces to hold the machine</li>
-      <li>Produce smaller mechanical pieces</li>
-    </ul>
-    <h3>Electronics Design</h3>
-    <ul>
-      <li>Try different electronics design softwares</li>
-      <li>Design and build a custom FabKit that will be the brain of the machine</li>
-    </ul>
-    <h3>Computer Controlled Machining</h3>
-    <ul>
-      <li>Produce the box that will hold the machine</li>
-    </ul>
-    <h3>Embedded Programming</h3>
-    <ul>
-      <li>Programming the FabKit for the machine's purposes</li>
-    </ul>
-    <h3>input Devices</h3>
-    <ul>
-      <li>Create the physical interface for the machine to select different programs, turn on and off strips of leds and manually spin it.</li>
-    </ul>
-    <h3>Output Devices</h3>
-    <ul>
-      <li>Feedback from the interface to the user</li>
-      <li>Motor</li>
-      <li>LEDs</li>
-    </ul>
-    <h3>Moulding and Casting</h3>
-    <ul>
-      <li>Create custom knobs for the potentiometers in the interface</li>
-    </ul>
-    <h3>Embedded Network and Communications</h3>
-    <ul>
-      <li>Interface with neopixels</li>
-      <li>Interface with the motor</li>
-      <li>Interface with the machine over Bluetooth</li>
-    </ul>
-    <h3>Interface & applicacion programming</h3>
-    <ul>
-      <li>Create a digital UI for the machine</li>
-    </ul>
-    <h3>Machine Design</h3>
-    <ul>
-      <li>The light-painting machine described above :)</li>
-    </ul><hr>
+    <p>Some thought has been given to easier, linear approaches, but the results are different, closer to the examples shown above from previous years:</p><img src="alternative1.jpg" alt=""><img src="alternative2.jpg" alt=""><hr>
     <h1>Previously, in a pre-pandemic life...</h1>
     <p>(These were my original thoughts about the final project, but in light of the pandemic and associated restrictions, we thought it lacked focus and "tightness". I will have to follow up on this later on :)</p>
     <p>I approach Fab Academy as a means to <b>prototype as many ideas as I can around around the theme presented below.</b>, as well as aqcuiring new skills to flesh them out beyond the notebook.</p>
