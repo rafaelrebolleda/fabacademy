@@ -66,8 +66,9 @@
     <h2>Spiral 3: Design, build and test basic components</h2>
     <ol class="checklist"> 
       <li class="done">Design and build the box</li>
-      <li>Design and build the main circle</li>
-      <li>Design and build gears</li>
+      <li class="done">Design and build the main circle</li>
+      <li class="done">Design and build gears</li>
+      <li class="done">Test the motor speed and torque</li>
     </ol>
     <h3>Week Assignments used for the project</h3>
     <ul>
@@ -75,14 +76,51 @@
       <li><a href="../W3">W6: Computer Controlled Cutting</a></li>
       <li><a href="../W6">W6: Computer Controlled Machining</a></li>
     </ul>
+    <h3>The box</h3>
+    <p>This was a fairly easy process, which can be seen in more detail in the <a href="../W6">W6: Computer Controlled Machining</a> assignment.</p>
     <video src="../W7/machining.mp4" autoplay mute controls loop></video><img src="../W7/assembled.jpg" alt="">
-    <h3>Iteration 4</h3>
-    <ul> 
-      <li>Communicate with the board over one spinning axis</li>
-      <li>Add some simple interface elements to control the machine</li>
-      <li>Consider adding a second, free spinning circle inside</li>
-      <li>Design and build the interface</li>
-    </ul>
+    <h3>The main circle</h3>
+    <p>A fairly straightforward process, I tried a couple different designs:</p><img src="circle_1.jpg" alt="">
+    <video src="circle_machinning_1.mp4" autoplay muted loop></video>
+    <p>It's super thing a light. However, I may do another one with a 15 mm stock, so drilling holes is less risky.</p><img src="circle_2.jpg" alt="">
+    <p>We also installed a bearing in the base of the box as part of the mechanical design.</p><img src="bearing.jpg" alt="">
+    <p>On eisseu though is that the depth of the box is too shallow for a mobile camera to see the whole ring. It's just too close.</p><img src="circle_3.jpg" alt="">
+    <p>Therefore, I need to reconsider perspective and point of shooting. Perhaps even the shape itself... maybe a circle is not the best option. In fact, I ended giving it some thought and came up with better shaped for the final outcome:</p><img src="shapes.jpg" alt="">
+    <h3>The gears</h3>
+    <p>I want to multiply the motor's rpm, so that means the motor needs a big gear and the axis that's connected to the circle will have a small one.</p><img src="gears_1.jpg" alt="">
+    <p>I used <a href="geargenerator.com">geargenerator.com</a> to create the gears and download them as DXF for further procesing before going to laser cut.</p><img src="gears_2.jpg" alt="">
+    <p>Gears are laser-cut in two 3mm plexiglas, which are then bound together with Chloroform:</p><img src="gears_3.jpg" alt="">
+    <h3>The motor</h3>
+    <p>The motor I was using so far, the classic 8BYJ-48 turns out to have faily slow rpms and not much torque, at least for my purposes:</p>
+    <video src="motor_1.mp4" autoplay muted loop></video>
+    <p>After asking and looking around for a bit, I settled on the a continuous servo motor. It doesn't have speed control, but it has much more torque, the latter being more relevant for me than the former. Initial tests were promising:</p>
+    <video src="motor_2.mp4" autoplay muted loop></video>
+    <p>It seems the pieces were coming together :)</p>
+    <h2>Spiral 4: First attempt at putting everything together</h2>
+    <h3> </h3>
+    <ol class="checklist"> 
+      <li class="scrapped">Communicate with the board over one spinning axis</li>
+      <li class="scrapped">Add some simple interface elements to control the machine</li>
+      <li class="scrapped">Consider adding a second, free spinning circle inside</li>
+      <li class="done">Design the interface</li>
+    </ol>
+    <p>This turned out to be a spiral full of failures and hard learnings. With time running out, some decisions will need to be made.</p>
+    <h3>The LP tracks</h3>
+    <p>With the motor and the lights testes out, I though it'd be a piece of cake to set up the "LP" tracks to communicate over the axis. Sure enough, building the board was easy enough.</p>
+    <video src="tracks_1.mp4" autoplay muted loop></video>
+    <p>Setting them up in the machine was easy enough. Here it is in action with the new shape and hooked to the servo through the gears:</p>
+    <video src="tracks_2.mp4" autoplay muted loop></video>
+    <p>I though setting the tracks to communicate with the board would be an easy part in the whole project, but it ended up being pretty complicated, to the point of resulting unsuable.</p>
+    <p>I did a first hand test. You can see it sort of looks OK:</p>
+    <video src="tracks_3.mp4" autoplay muted loop></video>
+    <p>In praxtice, however, connection is very fiddly. It works <em>most</em> of the time, but it fails enough times to not be usable.</p>
+    <p>I design and implemented different approaches, but all failed differently:</p><img src="tracks_4.jpg" alt=""><img src="tracks_5.jpg" alt="">
+    <p>I also tried different approachs on the LP itself, with cables both on top and directly on the track. Most worked most of the time, but none worked reliably. </p><img src="tracks_6.jpg" alt="">
+    <p>All in all, this was a big set back, and with time running out, we dieced to resort to the slip ring I had as backup. </p>
+    <h3>The Plan B</h3>
+    <p>This wll require a different, wider shape, with different seating, rebuidling the gear socket and 3D printing the pass-through transmission, and probably many more things.</p>
+    <p>Here's an idea of how it should work:</p><img src="slipring_1.jpg" alt="">
+    <p>This is quite a set back in the planning, which means I'll probably have to drop the inner ring. I'm hoping to still get good shots out of it :)</p>
     <h3>Iteration 5</h3>
     <ul> 
       <li>Put everything together</li>
