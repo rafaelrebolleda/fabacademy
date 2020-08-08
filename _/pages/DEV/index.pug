@@ -55,6 +55,7 @@ block main
     ul
       li: <a href="../W2">W2: Computer Aided Design</a>
       li: <a href="../W3">W6: Computer Controlled Cutting</a>
+      li: <a href="../W5">W5: 3D Printing</a>
       li: <a href="../W6">W6: Computer Controlled Machining</a>
 
     h3 The box
@@ -134,13 +135,78 @@ block main
 
     p This is quite a set back in the planning, which means I'll probably have to drop the inner ring. I'm hoping to still get good shots out of it :)
 
+    p This is new piece modeled in CAD:
+    img(src="fixture_1.jpg", alt="")
 
-    h3 Iteration 5
-    ul 
-      li Put everything together
-      li Create and experiment with different light and movement programs
-      li Add information and decoration stickers
-      li Bluetooth Networking
+    p And here's the final outcome: 
+    img(src="fixture_2.jpg", alt="")
+
+    p And here it is in action:
+    video(src="fixture_3.mp4" autoplay muted loop)
+
+    p We're back on track!
+
+    p In the meantime, this is how I'm thinking about the interface:
+    img(src="interface_1.jpg", alt="")
+
+    p I also started painting the interior elements in black:
+    img(src="black.jpg", alt="")
+
+    h2 Spiral 5
+    ol.checklist 
+      li.done Communicate with the board over one spinning axis
+      li.done Add some simple interface elements to control the machine
+      li.done Put everything together
+      li.done Create and experiment with different light and movement programs
+      li.done Add information and decoration stickers
+      li.scrapped Bluetooth Networking
+
+    h3 Week Assignments used for the project
+    ul
+      li: <a href="../W2">W2: Computer Aided Design</a>
+      li: <a href="../W3">W6: Computer Controlled Cutting</a>
+      li: <a href="../W6">W6: Computer Controlled Machining</a>
+
+    h3 Finishing the ring
+    p I cut the strip of neopixels in three different segments and linked them together. I had to do it twice because I mess up with the IN/OUT order for the strips, which is very relevant! Used black tape and black cable all over.
+    img(src="circle_4.jpg", alt="")
+    img(src="circle_5.jpg", alt="")
+    video(src="circle_6.mp4" autoplay loop muted)
+
+    h3 Building the User Interface
+    p I run some tests of individual componentes
+    video(src="connections_2.mp4" autoplay loop muted)
+
+    p Following up on the design shown above, I cut a simple piece of black plexiglass to mount the buttons, pots and switches and connected all common grounds. as well as adding pull_up resistors:
+    img(src="interface_2.jpg", alt="")
+    img(src="interface_3.jpg", alt="")
+
+    p Made some quick and dirty connections to test the UI
+    img(src="connections_3.jpg", alt="")
+
+    p In the Input and Output assignments I go in more detail about how it works, but these are a couple of examples:
+    video(src="interface_4.mp4" autoplay loop muted)
+    video(src="interface_5.mp4" autoplay loop muted)
+
+    h3 Adding a little decoration
+    p I thoought I'd add some colour by means of the FAB logo, so I cut it in vinyl:
+    img(src="vinyl_1.jpg", alt="")
+
+    p I also added some rails to prevent the cover from moving:
+    img(src="stoppers.jpg", alt="")
+
+
+
+    h3 Integrating the electronics
+    p As seen above, I also made a plexiglass case for the Hello Fabkit board so I coudl install it underneath the machine:
+    img(src="fabkit_box.jpg", alt="")
+
+    p These are the I/O connections:
+    img(src="connections_1.jpg", alt="")
+    img(src="connections_4.jpg", alt="")
+
+
+    <hr>
 
     h2 In relation to the assignments
     p In general terms, these are the main parts of the project machine and how they relate to the relevant assignments. Of course other topics will impact the project too :)
@@ -188,16 +254,6 @@ block main
     h3 Moulding and Casting
     ul
       li Create custom knobs for the potentiometers in the interface
-
-    h3 Embedded Network and Communications
-    ul
-      li Interface with neopixels
-      li Interface with the motor
-      li Interface with the machine over Bluetooth
-
-    h3 Interface & applicacion programming
-    ul
-      li Create a digital UI for the machine
 
     h3 Machine Design
     ul
