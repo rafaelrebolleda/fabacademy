@@ -109,13 +109,13 @@ block main
 
     h3 The box
     p This was a fairly easy process, which can be seen in more detail in the <a href="../W6">W6: Computer Controlled Machining</a> assignment.
-    video(src="../W7/machining.mp4" autoplay mute controls loop)
+    video(src="../W7/machining.mp4" autoplay muted controls loop)
     img(src="../W7/assembled.jpg", alt="")
 
     h3 The main circle
     p A fairly straightforward process, I tried a couple different designs:
     img(src="circle_1.jpg", alt="")
-    video(src="circle_machinning_1.mp4" autoplay muted loop)
+    video(src="circle_machinning_1.mp4" autplay muted controls loop)
     p It's super thing a light. However, I may do another one with a 15 mm stock, so drilling holes is less risky.
     img(src="circle_2.jpg", alt="")
     p We also installed a bearing in the base of the box as part of the mechanical design.
@@ -138,10 +138,10 @@ block main
 
     h3 The motor
     p The motor I was using so far, the classic 8BYJ-48 turns out to have faily slow rpms and not much torque, at least for my purposes:
-    video(src="motor_1.mp4" autoplay muted loop)
+    video(src="motor_1.mp4" autplay muted controls loop)
 
     p After asking and looking around for a bit, I settled on the a continuous servo motor. It doesn't have speed control, but it has much more torque, the latter being more relevant for me than the former. Initial tests were promising:
-    video(src="motor_2.mp4" autoplay muted loop)
+    video(src="motor_2.mp4" autplay muted controls loop)
 
     p It seems the pieces were coming together :)
 
@@ -157,15 +157,15 @@ block main
 
     h3 The LP tracks
     p With the motor and the lights testes out, I though it'd be a piece of cake to set up the "LP" tracks to communicate over the axis. Sure enough, building the board was easy enough.
-    video(src="tracks_1.mp4" autoplay muted loop)
+    video(src="tracks_1.mp4" autplay muted controls loop)
     
     p Setting them up in the machine was easy enough. Here it is in action with the new shape and hooked to the servo through the gears:
-    video(src="tracks_2.mp4" autoplay muted loop)
+    video(src="tracks_2.mp4" autplay muted controls loop)
 
     p I though setting the tracks to communicate with the board would be an easy part in the whole project, but it ended up being pretty complicated, to the point of resulting unsuable.
 
     p I did a first hand test. You can see it sort of looks OK:
-    video(src="tracks_3.mp4" autoplay muted loop)
+    video(src="tracks_3.mp4" autplay muted controls loop)
 
     p In praxtice, however, connection is very fiddly. It works <em>most</em> of the time, but it fails enough times to not be usable.
     p I design and implemented different approaches, but all failed differently:
@@ -191,7 +191,7 @@ block main
     img(src="fixture_2.jpg", alt="")
 
     p And here it is in action:
-    video(src="fixture_3.mp4" autoplay muted loop)
+    video(src="fixture_3.mp4" autplay muted controls loop)
 
     p We're back on track!
 
@@ -224,11 +224,11 @@ block main
     p I cut the strip of neopixels in three different segments and linked them together. I had to do it twice because I mess up with the IN/OUT order for the strips, which is very relevant! Used black tape and black cable all over.
     img(src="circle_4.jpg", alt="")
     img(src="circle_5.jpg", alt="")
-    video(src="circle_6.mp4" autoplay loop muted)
+    video(src="circle_6.mp4" autplay muted controls loop)
 
     h3 Building the User Interface
     p I run some tests of individual componentes
-    video(src="connections_2.mp4" autoplay loop muted)
+    video(src="connections_2.mp4" autplay muted controls loop)
 
     p Following up on the design shown above, I cut a simple piece of black plexiglass to mount the buttons, pots and switches and connected all common grounds. as well as adding pull_up resistors:
     img(src="interface_2.jpg", alt="")
@@ -238,8 +238,8 @@ block main
     img(src="connections_3.jpg", alt="")
 
     p In the Input and Output assignments I go in more detail about how it works, but these are a couple of examples:
-    video(src="interface_4.mp4" autoplay loop muted)
-    video(src="interface_5.mp4" autoplay loop muted)
+    video(src="interface_4.mp4" autplay muted controls loop)
+    video(src="interface_5.mp4" autplay muted controls loop)
 
     h3 Adding a little decoration
     p I thoought I'd add some colour by means of the FAB logo, so I cut it in vinyl:
@@ -262,11 +262,14 @@ block main
     img(src="hero_shot.jpg", alt="")
 
     h3 A few sample videos:
-    video(src="example_1.mp4" autoplay loop muted)
-    video(src="example_2.mp4" autoplay loop muted)
+    video(src="example_1.mp4" autplay muted controls loop)
+    video(src="example_2.mp4" autplay muted controls loop)
 
     h3 A few sample stills:
     img(src="examples.jpg", alt="")
+
+    h2 Video Summary
+    p <iframe src="https://player.vimeo.com/video/446303444" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
     <hr>

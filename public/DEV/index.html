@@ -128,10 +128,10 @@
     </ul>
     <h3>The box</h3>
     <p>This was a fairly easy process, which can be seen in more detail in the <a href="../W6">W6: Computer Controlled Machining</a> assignment.</p>
-    <video src="../W7/machining.mp4" autoplay mute controls loop></video><img src="../W7/assembled.jpg" alt="">
+    <video src="../W7/machining.mp4" autoplay muted controls loop></video><img src="../W7/assembled.jpg" alt="">
     <h3>The main circle</h3>
     <p>A fairly straightforward process, I tried a couple different designs:</p><img src="circle_1.jpg" alt="">
-    <video src="circle_machinning_1.mp4" autoplay muted loop></video>
+    <video src="circle_machinning_1.mp4" autplay muted controls loop></video>
     <p>It's super thing a light. However, I may do another one with a 15 mm stock, so drilling holes is less risky.</p><img src="circle_2.jpg" alt="">
     <p>We also installed a bearing in the base of the box as part of the mechanical design.</p><img src="bearing.jpg" alt="">
     <p>On eisseu though is that the depth of the box is too shallow for a mobile camera to see the whole ring. It's just too close.</p><img src="circle_3.jpg" alt="">
@@ -142,9 +142,9 @@
     <p>Gears are laser-cut in two 3mm plexiglas, which are then bound together with Chloroform:</p><img src="gears_3.jpg" alt="">
     <h3>The motor</h3>
     <p>The motor I was using so far, the classic 8BYJ-48 turns out to have faily slow rpms and not much torque, at least for my purposes:</p>
-    <video src="motor_1.mp4" autoplay muted loop></video>
+    <video src="motor_1.mp4" autplay muted controls loop></video>
     <p>After asking and looking around for a bit, I settled on the a continuous servo motor. It doesn't have speed control, but it has much more torque, the latter being more relevant for me than the former. Initial tests were promising:</p>
-    <video src="motor_2.mp4" autoplay muted loop></video>
+    <video src="motor_2.mp4" autplay muted controls loop></video>
     <p>It seems the pieces were coming together :)</p>
     <h2>Spiral 4: First attempt at putting everything together</h2>
     <h3> </h3>
@@ -157,12 +157,12 @@
     <p>This turned out to be a spiral full of failures and hard learnings. With time running out, some decisions will need to be made.</p>
     <h3>The LP tracks</h3>
     <p>With the motor and the lights testes out, I though it'd be a piece of cake to set up the "LP" tracks to communicate over the axis. Sure enough, building the board was easy enough.</p>
-    <video src="tracks_1.mp4" autoplay muted loop></video>
+    <video src="tracks_1.mp4" autplay muted controls loop></video>
     <p>Setting them up in the machine was easy enough. Here it is in action with the new shape and hooked to the servo through the gears:</p>
-    <video src="tracks_2.mp4" autoplay muted loop></video>
+    <video src="tracks_2.mp4" autplay muted controls loop></video>
     <p>I though setting the tracks to communicate with the board would be an easy part in the whole project, but it ended up being pretty complicated, to the point of resulting unsuable.</p>
     <p>I did a first hand test. You can see it sort of looks OK:</p>
-    <video src="tracks_3.mp4" autoplay muted loop></video>
+    <video src="tracks_3.mp4" autplay muted controls loop></video>
     <p>In praxtice, however, connection is very fiddly. It works <em>most</em> of the time, but it fails enough times to not be usable.</p>
     <p>I design and implemented different approaches, but all failed differently:</p><img src="tracks_4.jpg" alt=""><img src="tracks_5.jpg" alt="">
     <p>I also tried different approachs on the LP itself, with cables both on top and directly on the track. Most worked most of the time, but none worked reliably. </p><img src="tracks_6.jpg" alt="">
@@ -174,7 +174,7 @@
     <p>This is new piece modeled in CAD:</p><img src="fixture_1.jpg" alt="">
     <p>And here's the final outcome: </p><img src="fixture_2.jpg" alt="">
     <p>And here it is in action:</p>
-    <video src="fixture_3.mp4" autoplay muted loop></video>
+    <video src="fixture_3.mp4" autplay muted controls loop></video>
     <p>We're back on track!</p>
     <p>In the meantime, this is how I'm thinking about the interface:</p><img src="interface_1.jpg" alt="">
     <p>I also started painting the interior elements in black:</p><img src="black.jpg" alt="">
@@ -198,15 +198,15 @@
     </ul>
     <h3>Finishing the ring</h3>
     <p>I cut the strip of neopixels in three different segments and linked them together. I had to do it twice because I mess up with the IN/OUT order for the strips, which is very relevant! Used black tape and black cable all over.</p><img src="circle_4.jpg" alt=""><img src="circle_5.jpg" alt="">
-    <video src="circle_6.mp4" autoplay loop muted></video>
+    <video src="circle_6.mp4" autplay muted controls loop></video>
     <h3>Building the User Interface</h3>
     <p>I run some tests of individual componentes</p>
-    <video src="connections_2.mp4" autoplay loop muted></video>
+    <video src="connections_2.mp4" autplay muted controls loop></video>
     <p>Following up on the design shown above, I cut a simple piece of black plexiglass to mount the buttons, pots and switches and connected all common grounds. as well as adding pull_up resistors:</p><img src="interface_2.jpg" alt=""><img src="interface_3.jpg" alt="">
     <p>Made some quick and dirty connections to test the UI</p><img src="connections_3.jpg" alt="">
     <p>In the Input and Output assignments I go in more detail about how it works, but these are a couple of examples:</p>
-    <video src="interface_4.mp4" autoplay loop muted></video>
-    <video src="interface_5.mp4" autoplay loop muted></video>
+    <video src="interface_4.mp4" autplay muted controls loop></video>
+    <video src="interface_5.mp4" autplay muted controls loop></video>
     <h3>Adding a little decoration</h3>
     <p>I thoought I'd add some colour by means of the FAB logo, so I cut it in vinyl:</p><img src="vinyl_1.jpg" alt="">
     <p>I also added some rails to prevent the cover from moving:</p><img src="stoppers.jpg" alt="">
@@ -215,8 +215,10 @@
     <p>These are the I/O connections:</p><img src="connections_1.jpg" alt=""><img src="connections_4.jpg" alt="">
     <h2>The Fab Light Paint Machine</h2><img src="hero_shot.jpg" alt="">
     <h3>A few sample videos:</h3>
-    <video src="example_1.mp4" autoplay loop muted></video>
-    <video src="example_2.mp4" autoplay loop muted></video>
-    <h3>A few sample stills:</h3><img src="examples.jpg" alt=""><hr>
+    <video src="example_1.mp4" autplay muted controls loop></video>
+    <video src="example_2.mp4" autplay muted controls loop></video>
+    <h3>A few sample stills:</h3><img src="examples.jpg" alt="">
+    <h2>Video Summary</h2>
+    <p><iframe src="https://player.vimeo.com/video/446303444" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p><hr>
   </main>
 </body>
