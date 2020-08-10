@@ -168,6 +168,17 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"/presentation.png": {
+		"ft": 32768,
+		"iS": 1339236,
+		"oA": 0,
+		"oAP": "/public/presentation.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/public": {
 		"ft": 65536,
 		"oA": 1,
