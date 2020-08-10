@@ -168,25 +168,6 @@
 		"oF": 2,
 		"oS": 0
 		},
-	"/presentation.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/public/presentation.mp4",
-		"oF": 1
-		},
-	"/presentation.png": {
-		"ft": 32768,
-		"iS": 1339236,
-		"oA": 1,
-		"oAP": "/public/presentation.png",
-		"oF": 1,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
 	"/public": {
 		"ft": 65536,
 		"oA": 1,
