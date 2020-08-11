@@ -91,96 +91,127 @@ nav ol li a.blue {
   color: #fff;
   background-color: #00b5ac;
 }
-main {
+main,
+footer {
   width: 700px;
   margin-left: 270px;
   padding: 20px 40px;
   background: url("../images/pixels.gif") repeat-y;
 }
-main a {
+main a,
+footer a {
   color: #f2545b;
   text-decoration: none;
 }
-main h1 {
+main h1,
+footer h1 {
   margin: 30px 0 15px 0;
   color: #00b5ac;
 }
-main h1:first-of-type {
+main h1:first-of-type,
+footer h1:first-of-type {
   margin-top: 0;
 }
-main h2 {
+main h2,
+footer h2 {
   margin: 20px 0 10px 0;
   color: #f2545b;
 }
-main h3 {
+main h3,
+footer h3 {
   margin: 15px 0 10px 0;
 }
-main p {
+main p,
+footer p {
   margin: 15px 0 10px 0;
   line-height: 150%;
 }
-main code {
+main code,
+footer code {
   display: block;
   margin: 10px 0;
   padding: 10px;
   background-color: #eee;
 }
 main ul,
-main ol {
+footer ul,
+main ol,
+footer ol {
   margin: 10px 0 20px 40px;
 }
 main ul li,
-main ol li {
+footer ul li,
+main ol li,
+footer ol li {
   margin-bottom: 7px;
   line-height: 170%;
 }
-main div.checklist {
+main div.checklist,
+footer div.checklist {
   margin-top: 40px;
   padding: 2px 20px 20px 20px;
   background-color: #fdfda5;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #999;
 }
-main div.checklist ol {
+main div.checklist ol,
+footer div.checklist ol {
   list-style-type: none;
   margin: 20px 0 0 15px;
 }
-main div.checklist ol li:before {
+main div.checklist ol li:before,
+footer div.checklist ol li:before {
   content: "\2610";
   padding-right: 5px;
   font-size: 18px;
 }
-main div.checklist ol li.done:before {
+main div.checklist ol li.done:before,
+footer div.checklist ol li.done:before {
   content: "\2714";
   padding-right: 5px;
   color: #73c991;
 }
-main div.checklist ol li.scrapped:before {
+main div.checklist ol li.scrapped:before,
+footer div.checklist ol li.scrapped:before {
   content: "\2717";
   padding-right: 5px;
   color: #cc3e44;
 }
-main ol.checklist {
+main ol.checklist,
+footer ol.checklist {
   list-style-type: none;
   margin: 20px 0 0 15px;
 }
-main ol.checklist li:before {
+main ol.checklist li:before,
+footer ol.checklist li:before {
   content: "\2610";
   padding-right: 5px;
   font-size: 18px;
 }
-main ol.checklist li.done:before {
+main ol.checklist li.done:before,
+footer ol.checklist li.done:before {
   content: "\2714";
   padding-right: 5px;
   color: #73c991;
 }
-main ol.checklist li.scrapped:before {
+main ol.checklist li.scrapped:before,
+footer ol.checklist li.scrapped:before {
   content: "\2717";
   padding-right: 5px;
   color: #cc3e44;
 }
 main img,
-main video {
+footer img,
+main video,
+footer video {
   width: 650px;
   margin-bottom: 20px;
+}
+footer hr {
+  display: block;
+  border-width: 1px;
+  margin: 20px 0 50px 0;
+}
+footer img {
+  width: auto;
 }
