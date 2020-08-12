@@ -1,0 +1,64 @@
+extends ../../layouts/main.pug
+
+block main
+  main
+    h1 W10: Applications and Implications
+
+    h2 What will it do?
+    p It'll be a portable dark room inside which lights move in manually-controlled or automated fashion, so that its movement can be capture through a small hole with long exposure photography to create what's known as "light painting".
+    p This is an example I've shot in an actual dark room. In this example, I didn't have any actual control of the lights, which makes for interesting photography, but in this case I'm looking for a machine which has actual control of the lights:
+    img(src="http://mbp.local:5757/W1/eMotion.jpg", alt="")
+
+    h2 Who has done what beforehand?
+    p I've seen there have been some other projects around light painting in Fab Academy. For example <a href="http://archive.fabacademy.org/archives/2017/fablabhornafjordur/students/201/week11.html">this one</a> made during Fab Academy 2017 by Ana Cabral, Ola Mirecka and Birkir Thor:
+
+    <iframe src="https://player.vimeo.com/video/213813915" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+    p Or <a href="http://fab.cba.mit.edu/classes/863.17/Harvard/machines/index.html">this one</a>, which is somewhat similar:
+
+    video(src="http://fab.cba.mit.edu/classes/863.17/Harvard/machines/photos/programming/14.mp4" loop autoplay muted)
+
+    p Still, even if they are based on similar principles, the outcomes and very different.
+
+    h2 What will you design?
+    p I will need to design the container box, the spinning artifact, the electro-mechanical device(s) to make it move and the board to control all inputs and outputs.
+
+    h2 What materials and components will be used?
+    p I'm thinking the main materials will be plywood, plexiglas and PLA. As for components, the current idea is to modify a FabKit to suit my purposes, so it'll be an ATMEGA 328 and a few SMD resistors, capacitors and LEDs. I also need some sort of motor and a strip of programmable LEDs like the NeoPixels.
+
+    h2 Where will they come from?
+    p Digitkey will provide the components and the local hardware stores can provide wood and plexiglas. I'm sure I'll end up ordering stuff from Amazon too. 
+
+    h2 How much will they cost?
+    p I think a ball park figure should be around 75€ - 100€. The LEDs will probably be the most expensive part, although wood can also ramp up if things go wrong. 
+
+    h2 What parts and systems will be made?
+    ul 
+      li The box 
+      li The board and its connections
+      li The motor and gears
+      li The lighting system
+
+    h2 What processes will be used?
+    ul
+      li Additive manufacturing
+      li Substractive manufacturing
+      li Computer controlled cutting
+      li Embedded Programming
+    
+    h2 What questions need to be answered?
+    ul
+      li How will signal and power be passes over spinning axles?
+      li What's the right size of the box to enable focus?
+      li What's the right spinning speed?
+      li What's the right brightness level?
+      li 
+
+    h2 How will it be evaluated?
+    p I'll be following spiral development, roughly thinking in these terms:
+    ol 
+      li Proof of concept: connnecting motor and LEDs to a board and control them.
+      li Design and make a box to test size and integration
+      li Electro-mechanical design: gears, motor and spinning axis connections
+      li UI and programming tests
+      li Final integration and programming
