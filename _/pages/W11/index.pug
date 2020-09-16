@@ -5,28 +5,37 @@ block main
     h1 W11: Output Devices
     h2 Initial explorations
     h3 LEDs
+    p One of the first things I tried is running the classic "Blink" Arduino sketch on an external LED. 
     video(src="output_4.mp4" autoplay controls loop mute)
+
+    p I also needed to test out neopixel support with the Hello Fab Kit. This served as proof of concept.
+    p Sure enough it worked alright with a strip I had laying around:
     video(src="output_1.mp4" autoplay controls loop mute)
+
+    p I also tried an single neopixel integrated in the control panel, in this case just randomizing its color.
     video(src="output_5.mp4" autoplay controls loop mute)
 
-    
     h3 Step motor
+    p It was also clear I'd need a motor sooner or later for the project, so I gave a step motor a go. It was easy to control, but it ended up lacking torque and speed for my use case.
     video(src="output_2.mp4" autoplay controls loop mute)
 
 
-    h2 Final Project
+    h2 Output devices for the final project
     h3 LEDs
-    video(src="output_6.mp4" autoplay controls loop mute)
+    p In the following example we can see a single neopixel integrates in the control panel, which serves as reference for the colour of the strip of pixels in the spinning ring.
     video(src="output_7.mp4" autoplay controls loop mute)
 
-    p Brightness control
+    p I also experimented with using the potentiometer to control the brightness of neopixels inside the box, but it turned out to be impractical, as the useful range for long exposure photography is very limited anyway (around 5% brightness).
     video(src="output_8.mp4" autoplay controls loop mute)
 
-    p Individual pixel control
+    p I ended up using the potentiometer to move a single pixel throughout the strip, which created a way more useful effect in the photographs.
     video(src="output_9.mp4" autoplay controls loop mute)
 
     h3 Servo motor
+    p As mentioned previously, the step motor didn't work out for the project. I was lucky to have a servo motor laying around. Notice in the following example how its rest state is actually moving slowly. This had to ba calibrated later on to 95º instead of 90ª.
     video(src="output_3.mp4" autoplay controls loop mute)
+
+    p In the following video we can see the servo motor integrated with a push button control.
     video(src="output_10.mp4" autoplay controls loop mute)
     
     
