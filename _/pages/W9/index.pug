@@ -1,0 +1,20 @@
+extends ../../layouts/main.pug
+
+block main
+  main
+    h1 W9: Input Devices
+
+    h2 Analog sensor
+
+    p For this assignment I tried the classic HC-SR04 ultrasound sensor. It works  by sending a sound pulse and listening back for the echo. Then it's a matter of doing the math with the speed of sound.
+
+    p The one thing I found is that it's a little finicky with voltage, so working on 3.3V produced somewhat inconsistent results, so I eneded up powering the sensor independently.
+
+    video(src="ultrasound_1.mp4" autoplay loop mute controls)
+
+    h2 Input devices for the final project
+
+    h3 External button
+    p My first approach was to grab one of the push buttons I planned on using for the <a href="../FP/">Final Project's</a> control panel, and quickly test it. It's just basically the same sketch used in <a href="../W8/">Embedded Programming</a> but changing the pin number.
+
+    video(src="ext_button.mp4" autoplay loop mute controls)
