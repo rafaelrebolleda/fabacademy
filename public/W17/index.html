@@ -83,7 +83,17 @@
     <p>I tried different designs and approaches, and ended up going on a different path: using a slip ring with a 3D printed fixture to hold everything together:</p><img src="../DEV/slipring_1.jpg" alt="">
     <p>The first design was a both bigger and simpler than other iterations. It features a longer attachment base, according to the first iterations of the frame, and also featured a simple hexagonal ending meant to be inserted in the gears below.</p><img src="../W2/fixture.jpg" alt="">
     <video src="big_fixture.mp4" autoplay muted controls loop>    </video>
-    <p>After a few iterations, the framed had moved to a shorter base, and I had also added a small bearing beneath the case's bed, to help with the tilting. This fixture still features the haxgonal fit for the gear, but also an axis that would go into that second bearing. More info can be found in the <a href="../W5">3D Printing assignment</a>   </p><img src="../DEV/fixture_1.jpg" alt=""><img src="fixture_1.jpg" alt=""><img src="fixture_2.jpg" alt="">
+    <p>After a few iterations, the framed had moved to a shorter base, and I had also added a small bearing beneath the case's bed, to help with the tilting. This fixture still features the haxgonal fit for the gear, but also an axis that would go into that second bearing. </p><img src="../DEV/fixture_1.jpg" alt=""><img src="fixture_1.jpg" alt=""><img src="fixture_2.jpg" alt="">
+    <More>info about the fixture can be found in the <a href="../W5">3D Printing assignment</a></More>
+    <h3>Motor</h3>
+    <p>At first I planned on using the steo motor I had tried in the <a href="../W11">Output Assignment</a>, but it was pretty obvious the speed was too slow for the use case and I would need to multiply it with a system of gears.</p>
+    <video src="../W11/output_2.mp4" autoplay muted controls loop></video>
+    <p>However, the step motor I had could barely moved the gears:</p>
+    <video src="motor_1.mp4" autoplay muted controls loop></video>
+    <p>I could've tried to make the gears lighter by removing material with a different design, but still I needed more speed. Since speed control was not a requirement for my project, I thought I'd try a servo motor. A quick proof of concept showed promise:</p>
+    <video src="motor_2.mp4" autoplay muted controls loop></video>
+    <p>A quick set up with the gears engaged confirmed this was a good solution.</p>
+    <video src="../DEV/fixture_3.mp4" autoplay muted controls loop></video>
     <h2>The final result</h2><img src="../presentation.png" alt="">
     <video src="../presentation.mp4" poster="../FP/poster.jpg" controls></video>
   </main>

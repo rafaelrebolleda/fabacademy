@@ -85,17 +85,35 @@ block main
     img(src="../W2/fixture.jpg", alt="")
     video(src="big_fixture.mp4", autoplay muted controls loop)     
 
-    p After a few iterations, the framed had moved to a shorter base, and I had also added a small bearing beneath the case's bed, to help with the tilting. This fixture still features the haxgonal fit for the gear, but also an axis that would go into that second bearing. More info can be found in the <a href="../W5">3D Printing assignment</a>   
+    p After a few iterations, the framed had moved to a shorter base, and I had also added a small bearing beneath the case's bed, to help with the tilting. This fixture still features the haxgonal fit for the gear, but also an axis that would go into that second bearing. 
     img(src="../DEV/fixture_1.jpg", alt="")
     img(src="fixture_1.jpg", alt="")
     img(src="fixture_2.jpg", alt="")
-
-
-
-
-    //- h3 Gears
     
-    //- h3 Motor
+    
+    More info about the fixture can be found in the <a href="../W5">3D Printing assignment</a>
+    
+    //- h3 Gears
+
+    h3 Motor
+    p At first I planned on using the steo motor I had tried in the <a href="../W11">Output Assignment</a>, but it was pretty obvious the speed was too slow for the use case and I would need to multiply it with a system of gears.
+    video(src="../W11/output_2.mp4", autoplay muted controls loop)
+
+    p However, the step motor I had could barely moved the gears:
+    video(src="motor_1.mp4", autoplay muted controls loop)
+
+    p I could've tried to make the gears lighter by removing material with a different design, but still I needed more speed. Since speed control was not a requirement for my project, I thought I'd try a servo motor. A quick proof of concept showed promise:
+    video(src="motor_2.mp4", autoplay muted controls loop)
+
+    p A quick set up with the gears engaged confirmed this was a good solution.
+    video(src="../DEV/fixture_3.mp4", autoplay muted controls loop)
+
+
+
+
+
+
+    
     
     //- h3 Controls
     
