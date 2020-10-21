@@ -1,0 +1,74 @@
+extends ../../layouts/main.pug
+
+block main
+  main
+    h1 W17: Mechanical & Machine Design
+    h2 The idea
+    p As I mentioned in more detail in the <a href="../W1">Principles and Practices</a>, I've done some long-exposure light painting photography in the past, like the shot below:
+    img(src="../W1/eMotion.jpg", alt="")
+
+    p To take these kinds of shots I had tp completely shut down a room to prevent the light from coming in. In a run-of-the-mill family apartment, this is quite a feat.
+    p Therefore, the idea of having a small, self-contained and portable studio of sorts to create light paintings seemed like both useful and interesting.
+    p In the following drawing, we can see a closed box —no light comes in— with a small hole to take shots with a mobile phone's camera. Inside, there are a number of RGB LEDs that would move, creating the painting with their motion.
+    img(src="../W1/box.jpg", alt="")
+    p This assignment ended up becoming my <a href="../FP">final project</a>.
+
+    h2 Designing and building the parts
+    h3 Case
+    p I though I'd use 10mm plywood, which was easy to source locally, light and manageable, all while being sturdy enough. The pieces are designed to fit tightly together, although I'll be applying glue close to the end of the project.
+    img(src="../W7/software_1.jpg", alt="")
+
+    p I though I would add a bit of decoration in relation to the theme of the machine, so I though something like these circled patterns and letters were easy enough to machine yet added a nice touch.
+    img(src="../W7/software_3.jpg", alt="")
+    video(src="../W7/machining.mp4", autoplay muted controls loop)
+
+    p Assembling was fairly easy, as the plywood has enough tolerance.
+    video(src="../W7/assembling.mp4" autoplay controls muted loop)
+
+    p Here's the case for the machine:
+    img(src="../W7/assembled.jpg", alt="")
+
+    p There's quite bit more detail in the <a href="../W7/">Computer Controlled Machining assignment</a>.
+    
+    h3 Frame
+    p As seen in the sketch above, my iniital design for the frame was a circle. Here can see a couople different takes on the base:
+    img(src="../DEV/circle_1.jpg", alt="")
+    video(src="../DEV/circle_machinning_1.mp4", autoplay muted controls loop) 
+    img(src="../DEV/circle_2.jpg", alt="")
+
+    p However, early prototypes showed this approach didn't work well with the focal length of a mobile camera working in the constraints of the case, so I tried other designs:
+    img(src="alternatives_1.jpg", alt="")
+    img(src="alternatives_2.jpg", alt="")
+    img(src="../DEV/shapes.jpg", alt="")
+
+    p Finally I ended up settling on the following one becasue it provided a constant an ideal distance to the top hole in the case, and that would become key when shooting.
+    img(src="frame.jpg", alt="")
+    video(src="frame.mp4", autoplay muted controls loop) 
+    
+    p To finish the frame, there needs to be a hole through the base to attach it through it axis of rotation.
+    img(src="hole.jpg", alt="")
+
+    p I broke a couple at this point, as it turned out to be to thing to withstand the hole at the base. 
+    img(src="crack.jpg", alt="")
+    
+    p I eneded up glueing two frames together to make a 
+    img(src="glue.jpg", alt="")
+
+
+    //- h3 Fixture
+
+    //- h3 Gears
+    
+    //- h3 Motor
+    
+    //- h3 Controls
+    
+    //- h2 Operation
+
+    //- h3 Manual
+    //- h3 Automatic
+
+
+    h2 The final result
+    img(src="../presentation.png", alt="")
+    video(src="../presentation.mp4" poster="../FP/poster.jpg" controls)
