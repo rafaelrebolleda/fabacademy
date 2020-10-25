@@ -3,4 +3,13 @@ extends ../../layouts/main.pug
 block main
   main
     h1 W12: Interface Programming
+    h2 Approach
+    p For this assignment I thought I'd give <a href="https://processing.org/">Processing</a> a go, since it seems to have a similar structure and coding environment to Arduino.
+    
+    p Doing a little bit of research, I learned that both can communicate over the serial port, so it seemed woth a try. I also found about <a href="http://www.sojamo.de/libraries/controlP5/">ControlP5</a>, an open source Processing library that deals with GUI elements, so I thought I would also give that a try.
+
     h2 The idea
+    p Since <a href="../W6">I had built a custom version of the FabKit with an extra LED and button</a> for my <a href="../FP">Final Project</a>, I though I could use it to test bidireccional communication with a simple, proof of concept interface.
+    
+    p The idea would be to control both LEDs in the PCB via the Processing GUI, and also change the GUI via the button on the PCB. Something like this:
+    img(src="sketch.jpg", alt="")
