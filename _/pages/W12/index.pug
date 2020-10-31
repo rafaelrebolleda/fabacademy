@@ -14,18 +14,98 @@ block main
     p The idea would be to control both LEDs in the PCB via the Processing GUI, and also change the GUI via the button on the PCB. Something like this:
     img(src="sketch.jpg", alt="")
 
+    p In the end, as it is often the case, I ended up doing something slightly different.
+
     h2 Creating the GUI
-    h2 Switching the LED
+    p Processing allows the placing of text, geometric shapes and images, so I used a bit of everything.
+
+    p In it we can see the main elements:
+    ul
+        li A switch to turn on the LED on the PCB
+        li A slider to control blinking speed for that LED
+        li A big red bar that turns green when a button is pressed on the PCB
+
+    img(src="gui.jpg", alt="")
+
+    p To create the basic layout I setup the window size, added an image to the project folder and then loaded it in Processing as the main logo.
+    
+    p Then I created the basic structure with the header and the dividing lines.
+     
+    h2 Having Arduino and Processing talking to each other
+    p For both "devices" to talk to each other, they must be on the same serial port. This will change on each computer, but on mine it was "/dev/cu.usbserial-A9M9DV3R". 
+    img(src="port.jpg", alt="")
+
+    p Once they're both connected to the same port, each can write to that port and the other can read. All coommands exchanged are just one letter:
+
+    p Processing to Arduino
+
+    ul
+        li "N" for the LED to turn ON
+        li "F" for the LED to turn OFF
+        li A number between 1 and 9 to control the blinking speed
+    
+    p From Arduino to Processing
+
+    ul
+        li "1" when the button is pressed 
+        li "0" when the button is not pressed
+    
+    h2 Switching the LED ON and OFF
     h3 Processing
+    p ControlP5 has a number of UI elements which can be configured in terms of size and color.
+    img(src="switch.jpg", alt="")
+    
+    p There's also a linked function that will be trigger whenever there's a change. It is whitin this function that a message is sent through the serial port:
+    img(src="switch_func.jpg", alt="")
+ 
     h3 Arduino
+    p From the other side, Arduino is reading the serial port and will react depending on the message. The one thing that didn't quite work for me is traying a "case" statement. For some reason the values were not being recognised and the branching didn't work, so I went with a bunch of "if" statements:
+    img(src="LED_1.jpg", alt="")
+
+    p Further down in the code Arduino checks the variables set up from the serial port reading to turn the LED on and off.
+    img(src="LED_2.jpg", alt="")
+
+    p Here's everyting in action:
+
     video(src="switch.mp4" autoplay muted controls loop)
     
     h2 Changing blinking speed
     h3 Processing
+    p ContolP5 also offers a slider UI element that can be easily configured:
+    img(src="slider.jpg", alt="")
+
+    p There's a corresponding function that will send the value through the serial prot whenever the slider is moved. I used to the "floor" function to make a single number.
+    img(src="slider_func.jpg", alt="")
+
     h3 Arduino
+    p Just like with the switch, Arduino will check the incoming serial messages to find a recognisable command, in this cases a number from 1 to 9.
+    img(src="speed_1.jpg", alt="")
+
+    p Later it will adjust the delay accoding to the speed:
+    img(src="speed_2.jpg", alt="")
+
+    p Here's everything in action:
+
     video(src="speed.mp4" autoplay muted controls loop)
     
     h2 Displaying PCB button state
-    h3 Processing
     h3 Arduino
+    p This time around the command is initiated in Arduino, as it will be writing on the serial port the state of the button as euther "1" or "0".
+    img(src="button_1.jpg", alt="")
+
+    h3 Processing
+    p On the other side, Processing will read this valuue and change the fill for the button rectangle. It took me quite a long while to get this working, and the trick was to:
+    ul 
+        li Filter null messages
+        li Trim the string to remove invisible characters
+        li Convert to integer for comparison
+    
+    img(src="button_2.jpg", alt="")
+
+    p Here's everything in aaction:
     video(src="button.mp4" autoplay muted controls loop)
+
+    h2 Files
+    ul
+        li <a href="Processing.zip">Processing Code</a>
+        li <a href="Arduino.zip">Arduino Code</a>
