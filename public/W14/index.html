@@ -52,8 +52,23 @@
     <h2>The connections</h2>
     <h3>Hello Fab Kit Board</h3><img src="hello_fabkit.jpg" alt=""><img src="connections.jpg" alt="">
     <h3>On the mobile device</h3>
+    <p>The bluetood board indicated its availability for pairing with the blinking LED:</p>
+    <video src="pairing.mp4" autoplay muted loop controls></video>
     <p>I'm using the free <a href="https://apps.apple.com/es/app/arduinoblue/id1340487989?l=en">Arduino Blue</a> app to connect to the Bluetooth module. </p>
     <video src="app.mp4" autoplay muted loop controls></video>
+    <p>Once both devices are connected to each other, the LED stops blinking.</p>
+    <video src="paired.mp4" autoplay muted loop controls></video>
+    <h2>Sending messages through the network</h2>
+    <h3>Setting up the code</h3>
+    <p>The Hello Fab Kit board will keep listening to the serial port to recognise two different commands:</p>
+    <ul>
+      <li>"1" to turn the LED on</li>
+      <li>"0" to turn the LED off</li>
+    </ul><img src="code.jpg" alt="">
+    <h3>Sending the commands</h3>
+    <p>Once connected, the mobile app has a basic terminal to send commands:</p><img src="terminal.jpg" alt="">
+    <p>From there, a textfield allows for sending commands from the device to the Hello Fab Kit board:</p>
+    <video src="terminal.mp4" autoplay muted loop controls></video>
     <h2>Integration</h2>
     <p>It turned out to be much simpler than I expected, but that is also because I learned (and suffered) a lot with serial bus comms on the <a href="../W12">Interface Programming assignment</a></p>
     <video src="commands.mp4" autoplay muted loop controls></video>
