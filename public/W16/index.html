@@ -39,7 +39,7 @@
       <li><a href="../W11/">Output Devices</a></li>
       <li><a href="../W12/">Interface Programming</a></li>
       <li><a href="../W13/">Intellectual Property</a></li>
-      <li><a href="../W14/">Embedded Networking</a></li>
+      <li><a href="../W14/">Networking</a></li>
       <li><a href="../W15/">Molding & Casting</a></li>
       <li><a href="../W16/">Wildcard: Waterjet CCC</a></li>
       <li><a href="../W17/">Mechanical & Machine Design</a></li>
@@ -49,11 +49,11 @@
     <h1>W16: Wildcard Week: Waterjet cutting</h1>
     <p>In the wildcard week I wanted to experiment with cutting harder materials, like stainless steel. Fortunately the FabLab had just acquiered a <a href="https://www.wazer.com/">Wazer desktop waterjet cutter</a>, so I thought I'd give that a try.</p><img src="wjc_1.jpg" alt="">
     <h2>The idea</h2>
-    <p>A pickguard is typically made out layered plastic, and serves as support for electonics, to protect a guitar's body paintjob and wood and to give teh guitar a personality. Here's a classic Fender Stratocaster with a white pickguard:</p><img src="https://www.fmicassets.com/Damroot/ZoomJpg/10001/0144503506_gtr_cntbdyright_001_nr.jpg" alt="">
+    <p>An electric guitar pickguard is typically made out of layered plastic, and serves as support for electonics, to protect a guitar's body paintjob and wood and to give the guitar some personality. Here's a classic Fender Stratocaster with a white pickguard:</p><img src="https://www.fmicassets.com/Damroot/ZoomJpg/10001/0144503506_gtr_cntbdyright_001_nr.jpg" alt="">
     <p>I thought I could make myself a Strat pickguard stencil that I could later use as a template with softer materials or even paper blueprints.</p>
     <h2>The design</h2>
     <p>I went for a stock pickguard for single coils, with no modifications. This would be easy to find and trace and would be useful in many models.</p><img src="wjc_2.jpg" alt="">
-    <p>The Wazer only takes DXF files, so I had to go through AutoCAD. Oddly enough, AtuoCAD drew some very rough curves (see circles for holes), and I had to "soften" them again there:</p><img src="wjc_3.jpg" alt=""><img src="wjc_4.jpg" alt="">
+    <p>The Wazer only takes DXF files, so I had to go through AutoCAD. Oddly enough, AtuoCAD drew some very rough curves (see circles for holes), and I had to "soften" them again within the software:</p><img src="wjc_3.jpg" alt=""><img src="wjc_4.jpg" alt="">
     <h2>Preparing the stock</h2>
     <p>I would be using 1mm thick stainless steel cut from a long sheet.</p><img src="wjc_5.jpg" alt="">
     <p>The sheet covers all the cutting area in the Wazer</p><img src="wjc_6.jpg" alt="">
@@ -61,24 +61,24 @@
     <p>The Wazer comes with a piece of plastic to zero-in on Z-axis:</p><img src="wjc_8.jpg" alt="">
     <p>Finally, check there's enough abrasive loaded:</p><img src="wjc_9.jpg" alt="">
     <h2>Configuring the Wazer for cutting</h2>
-    <p>I have to say the Wazer's software is fairly basic and stripped-down, compared to what I've experienced in CCM.</p>
-    <p>Once the file is imported through the web interface, the first thing to is to position it on the bed. Since I put a stock that covers the whole bed, this wasn't much of an issue. I found it surprising though that there see to be no option to zero the head, and all that's left for smaller parts is the grid that matches the bed, represented by white lines.</p><img src="wjc_10.jpg" alt="">
+    <p>I have to say the Wazer's software is fairly basic and stripped-down, compared to what I've experienced in <a href="../W7">CCM</a>.</p>
+    <p>Once the file is imported through the web interface, the first thing to do is to position it on the bed. Since I put a stock that covers the whole bed, this wasn't much of an issue. I found it surprising though that there seems to be no option to zero the head on the x or y axis, and all that's left for smaller parts is the grid that matches the bed, represented by white lines.</p><img src="wjc_10.jpg" alt="">
     <p>Next, the Wazer asks for the material. In this cases 1mm stainless steel:</p><img src="wjc_11.jpg" alt="">
-    <p>There's an option to choose the cutting path. For my purposes, stright on top was fine.</p><img src="wjc_12.jpg" alt="">
+    <p>There's an option to choose the cutting path. For my purposes, straight on top on the line was fine.</p><img src="wjc_12.jpg" alt="">
     <p>The software allows for automatic or manual tab placement. I ended up not using tabs after all, as they seemed too complicated to remove from such a hard stock.</p><img src="wjc_13.jpg" alt="">
     <p>Finally, thw Wazer allows for different cutting quality levels. I went with fine as the estimated job time difference wasn't that much. </p><img src="wjc_14.jpg" alt="">
     <h2>Cutting the piece</h2>
-    <p>As it's often the case, I had to cut several times to fnish the piece, as there's <em>always</em> something that comes up.</p>
+    <p>As it's often the case, I had to go at it several times to finish the piece, as there's <em>always</em> something that comes up.</p>
     <video src="wjc_0.mp4" autoplay muted controls loop></video>
     <video src="wjc_16.mp4" autoplay muted controls loop></video>
     <video src="wjc_15.mp4" autoplay muted controls loop></video>
     <h3>Running out of abrasive</h3>
-    <p>The first run was going alright, but eventually the Wazer ran out of abrasive. I'm surprised it didn't stop this time around, as this happened again in another run and I had the chance to fill it in. In this case, however, it continued to cut with actually cutting, so I ended up cancelling the process.</p>
-    <p>In that image I also saw the tab size, and that's why I ended up removing them from the cutting process, especially with the regards to the holes.</p><img src="wjc_17.jpg" alt="">
+    <p>The first run was going alright, but eventually the Wazer ran out of abrasive. I'm surprised it didn't stop this time around, as this happened again in another run and I had the chance to fill it in. In this case, however, it continued to cut without actually cutting, so I ended up cancelling the process mid way.</p>
+    <p>In that image I also saw the tab size compared to a hole, and that's why I ended up removing them from the cutting process, especially with the regards to the holes.</p><img src="wjc_17.jpg" alt="">
     <h3>Misplacing the stock</h3>
-    <p>For the following run I tried to cut a smaller stock and eyeball its position based on the cut marks and the grid on the bed. The image speaks for itself :D</p><img src="wjc_18.jpg" alt="">
+    <p>For the following run I tried to cut a smaller stock and eyeball its position based on the cut marks and the grid on the bed. The image speaks for itself :D   </p><img src="wjc_18.jpg" alt="">
     <p>This run however gave me the opportunity to come across another issue that may arise during the cutting process.</p><img src="wjc_19.jpg" alt="">
-    <h3>The thrid time's the charm</h3>
+    <h3>The third time's the charm</h3>
     <p>I cut another piece of stock, this time filling again the whole bed.</p>
     <video src="wjc_20.mp4" autoplay muted controls loop></video>
     <p>The Wazer does eat a lot of abrasive. This time around I did get a message and had the opportunity to refill and continue:</p><img src="wjc_21.jpg" alt=""><img src="wjc_22.jpg" alt="">

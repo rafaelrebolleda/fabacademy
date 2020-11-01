@@ -8,8 +8,8 @@ block main
     p Here's the laser cutter we have on the lab.
     img(src="laser1.jpg", alt="")
 
-    h2 The Comb
-    p Alright... so back to Fusion360 to wrestle parametric design (still complete gibberish to me). First, I created a rough shape by just joining the dots
+    h2 Characterization
+    p Alright... so back to Fusion360 to wrestle parametric design (still working my way through it!). To understand the limits of the machine, we create a comb. First, I created a rough shape by just joining the dots
     img(src="comb1.jpg", alt="")
 
     p In the next step I manually gave them constraints and measures
@@ -24,11 +24,11 @@ block main
     p These are the values I tried
     img(src="laser5.jpg", alt="")
 
-    p The best match for this material is at 1,7mm, and measuring the actual cuts, we know the ketf value is 0.2mm
+    p The best match for this material is at 1,7mm, and measuring the actual cuts, we know the kerf value is 0.2mm
     img(src="laser6.jpg", alt="")
 
     h2 A very basic construction kit
-    p Now that I have the measure, my goal is to learn:
+    p Now that I have the measures and characteristics, my goal is to learn:
     ul
       li How to apply parametric design with the material and machine in mind
       li Learn how to use mirroring in CAD
@@ -38,7 +38,7 @@ block main
     img(src="CAD1.jpg", alt="")
     img(src="CAD2.jpg", alt="")
 
-    p Next, we need to import that inthe laser cutter software and adjust laser settings:
+    p Next, we need to import that in the laser cutter software and adjust laser settings:
     img(src="settings.jpg", alt="")
 
     p Here we can see the actual cutting:
@@ -50,7 +50,7 @@ block main
     h2 Final Project Designs
     
     h3 Gears
-    p I designed the gears with the <a href="https://geargenerator.com">Gear Generatos</a> tool, which is very convenient to test different sizes and ratios. The files can then be downloaded for further editing, in this case in AutoCAD.
+    p I designed the gears with the <a href="https://geargenerator.com">Gear Generator</a> tool, which is very convenient to test different sizes and ratios. The files can then be downloaded for further editing, in this case in AutoCAD.
     img(src="../DEV/gears_2.jpg", alt="")
 
     p In AutoCAD, I cleaned the files from some labeling generates by the tool and added the hole to fit the fixture that comes with the servo motor:
@@ -87,7 +87,7 @@ block main
     p I imported it in Illustrator and removed everything but one piece of the logo. The Roland is a bit picky about outline size and coordinates.
     img(src="vinyl_prep.jpg", alt="")
 
-    p Then I print (cut) the same piece in three different rolls:
+    p Then I print (cut) the same piece in three different rolls (red, green and blue):
     video(src="vinyl_cutting.mp4" autoplay controls loop)
 
     p Then it's just about using the transfer paper and glueing it to the wood:

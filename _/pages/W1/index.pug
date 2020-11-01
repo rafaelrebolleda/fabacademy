@@ -5,11 +5,11 @@ block main
     h1 W1: Principles and Practices
 
     h2 Setting Up
-    p I'm on a rather fresh installation of macOS Catalina, so the first thing to do was to generate an ssh key and set up git.
+    p I'm on a rather fresh installation of macOS Catalina, so the first thing to do was to generate an SSH key and set up git.
     h3 Generating an SSH key
-    p I just followed <a href="https://docs.gitlab.com/ee/ssh/README.html#generating-a-new-ssh-key-pair">the very simple tutorial on Gitlab's Docs</a>. It will guide through generating the key pair and uploading it to <a href="https://gitlab.fabcloud.org/profile/keys">Gitlab's SSH keys section in your profile</a>:
+    p I just followed <a href="https://docs.gitlab.com/ee/ssh/README.html#generating-a-new-ssh-key-pair">the very simple tutorial on Gitlab's Docs</a>. It will guide you through generating the key pair and uploading it to <a href="https://gitlab.fabcloud.org/profile/keys">Gitlab's SSH keys section in your profile</a>:
     img(src="keys.jpg", alt="")
-    p Now wer're ready to set up git to clone the repo locally and being adding to it and uploading back to Gitlab.
+    p Now wer're ready to set up git to clone the repo locally and begin adding to it and uploading back to Gitlab.
 
     h3 Setting Up git
     p The git community has <a href="https://git-scm.com/docs/gittutorial">a nice tutorial on their official website</a>.
@@ -18,21 +18,21 @@ block main
     img(src="git2.jpg", alt="")
     img(src="git3.jpg", alt="")
     
-    p Once the key is uploaded and we've got git running locally, we just clone the remote repository from Gitlab:
+    p Once the key is uploaded and we've got git running locally, we just clone the remote repository from GitLab:
     img(src="git4.jpg", alt="")
 
     h3 Designing and coding the website
-    p I wanted to try a template than the default with less clicking to move back and forth between assignments.
-    p There are many, many good text editors out there, some free like <a href="https://atom.io/">Atom</a> or paid like <a href="https://www.sublimetext.com/">Sublime Text</a>. I settled on <a href="https://code.visualstudio.com/">Visual Studio Code</a> because it's free, extensible, multiplatform and well supported.
+    p I wanted to try a different template than the default, with less clicking to move back and forth between assignments.
+    p There are many, many good text editors out there, some are free like <a href="https://atom.io/">Atom</a> or paid like <a href="https://www.sublimetext.com/">Sublime Text</a>. I settled on <a href="https://code.visualstudio.com/">Visual Studio Code</a> because it's free, extensible, multiplatform and well supported.
 
     p I also wanted to experiment with something different than good old HTML, so I'm going to be trying out <a href="https://pugjs.org/api/getting-started.html">Pug</a> and <a href="https://stylus-lang.com/">Stylus</a>. Both allow for some utilities and simplified coding. I'll be compiling these to HTML with <a href="https://codekitapp.com/">CodeKit</a>.
 
     h3 Publishing to FabCloud
-    p FabCloud can make your repo into a website if you isntruct them how to build it after every commit pushed.
+    p FabCloud can make your repo into a website if you isntruct them how to build it after every commit is pushed.
     p In my case it's just simple HTML so there isn't much to do.
     img(src="yaml.jpg", alt="")
 
-    p Once some code is written it's a matter of comming the changes and pushing back to FabCloud:
+    p Once some code is written, it's a matter of commitinng the changes and pushing back to FabCloud:
     code git add .
     code git commit -m "commit message"
     code git push
@@ -48,14 +48,14 @@ block main
     img(src="quickactions.jpg", alt="")
 
     h1 The <em>new</em> Final Project
-    p With the pandemic still ongoing, I've found myself in July still with limited access to the Fab Lab, so in accordance with my mentor, we've decided to take a different approach to how I thought the Fab Academy would unfold. To that extent, we've come up with a new final project that will make the most of the assignments, specially using the machine as part of it.
+    p With the pandemic still ongoing, I've found myself in from March to November (and counting) with very limited access to the Fab Lab, so in accordance with my mentor, we've decided to take a different approach to how I thought the Fab Academy would unfold. To that extent, we've come up with a new final project that will make the most of the assignments, specially using the <a href="../W17">Mechanical and Machine Design</a> as part of it, also considering that I'm a single student.
 
     h2 Background
-    p Light-painting is an art form which consists taking pictures of moving light, capturing the traces as it moves in space. I've doing light-painting photogrpah for a while, in a very rudimentary way.
+    p Light-painting is an art form which consists on taking pictures of moving light, capturing the traces as it moves in space. I've been doing light-painting photogrpah for a while, in a very rudimentary and amateur way.
     p This is my set up: a dark background in a closet. This is actually the same room and spot from which I've had to connect sometimes throughout the pandemic confinement!
     img(src="_Escenario.jpg", alt="")
 
-    p And this are the lights I've used: kids toys and a laser pointer.
+    p And these are the lights I've used: kids toys and a laser pointer.
     img(src="_Iluminación.jpg", alt="")
     
     p These are just a couple of shots with this set up:
@@ -77,13 +77,13 @@ block main
     p For this project, I'm looking to create a machine that does something similar to another shot of mine, albeit in a more portable studio with more interesting possibilities.
     img(src="eMotion.jpg", alt="")
 
-    p In short, the idea to make <strong>a closed box with moving lights create pseudo-random light-paintings via long exposure shots</strong>.
+    p In short, the idea is to make <strong>a closed box with moving lights that create pseudo-random light-paintings via long exposure shots</strong>.
 
     img(src="box.jpg", alt="")
 
     p The box will be completely black inside, and has a few small opening for a mobile camera phone to see thorugh. The faces will be covered in velcro to allow for easy attachment.
 
-    p Inside, concentric circles with LEDs will spin and their traces will be captured. Both LED behaviour and <em>some aspects</em> of the movement can be programmed and or controlled.
+    p Inside, concentric circles with LEDs will spin and their traces will be captured. Both LED behaviour and <em>some aspects</em> of the movement can be programmed and/or controlled.
     
     p Each circle could have up to four LEDs, as seen in the cross-section below, although that's probably not necessary to creat interesting effects, and could be a power consumption hurdle.
     img(src="pixels.jpg", alt="")

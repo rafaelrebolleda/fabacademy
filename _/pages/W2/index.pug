@@ -4,20 +4,20 @@ block main
   main
     h1 W2: Computer Aided Design
 
-    p So... I have no experience whatsoever with 3D. In fact I've been avoiding it for most of my career, just like video editing, because it always seems SLOOOOOW compared to the lightness of a code editor or 2D UI tools like Figma.
+    p So... I have no experience whatsoever with 3D. In fact I've been avoiding it for most of my life, just like video editing, because it always seems SLOOOOOW compared to the lightness of a code editor or 2D UI tools like Figma.
 
     h2 Goals
     ul
       li Try different 3D software
       li Understand the basic mental model of 3D modelling vs. 2D grpahic design
-      li Explore very basic operatons like extruding shapes and doing holes
-      li Begin to understand how I would approach one my <a href="../W1">final project</a> pieces
+      li Explore very basic operations like extruding shapes and doing holes
+      li Begin to understand how I would approach one my <a href="../FP">final project</a> pieces
 
-    p I though I'd seize the opportunity to approach some ideas for the final project, as seen in this sketch.
+    p At the begenning, I thought I'd seize the opportunity to approach some ideas for the [note: pre-pandemic] final project, as seen in this sketch.
     img(src="../W1/pedalboard.jpg", alt="")
         
     h2 Resources
-    p I decided to chekck the following tools
+    p I decided to check the following tools:
     ul
       li: a(href="https://tinkercad.com") Tinkercad.
       li: a(href="https://onshape.com") OnShape
@@ -34,12 +34,12 @@ block main
 
     p Speaking of documentation, here are the resources I checked:
     ul
-      li Autodesk has a nomber of <a href="https://f360ap.autodesk.com/courses#getting-started-for-absolute-beginners">training videos</a> in their platform once you log in, although I found them geared towards people who already know 3D and are transitioning to Fusion 360
-      li Autodesk also has quite a few free training cursos <a href="https://www.udemy.com/courses/search/?src=ukw&q=Fusion%20360&p=1&price=price-free">on Udemy</a>.
+      li Autodesk has a number of <a href="https://f360ap.autodesk.com/courses#getting-started-for-absolute-beginners">training videos</a> in their platform once you log in, although I found them geared towards people who already know 3D and are transitioning to Fusion 360
+      li Autodesk also has quite a few free training curses <a href="https://www.udemy.com/courses/search/?src=ukw&q=Fusion%20360&p=1&price=price-free">on Udemy</a>.
       li <a href="https://www.makershed.com/products/fusion-360-for-makers-pdf">The book "Fusion360 for Makers"</a>, from Make Media really starts from the bare bottom.
 
     h2 Explorations
-    p So I started with the basics... drawing a shape and trying to punch a hole through it. It took a while to understand it, because the process' implementation is very different from 2D boolean operations, despite being conceptually equal.
+    p So I started with the basics... drawing a shape and trying to punch a hole through it. It took a while to understand it, because the process' implementation is very different from 2D boolean operations, despite it being conceptually equal.
     img(src="hole.jpg", alt="")
 
     p In this case I'm drawing another "sketch" to create a new piece of the pedalboard.
@@ -49,18 +49,19 @@ block main
     p This is how both of them look together.
     img(src="extrusions.jpg", alt="")
 
-    p A very simple render with wood:
+    p A very simple render in wood:
     img(src="render.jpg", alt="")
 
     h2 Final Project Designs
     h3 The machine box
+    p As mentioned on <a href="../W1/">Principles and Practices</a>, due to the COVID pandemic, I changed my ideas for a <a href="../FP">Final Project</a>, so the previous exercises are somewhat disconnected with the following.
     p This design was machined on flat 10mm plywood, so I worked in 2D in AutoCAD:
     img(src="../W7/software_1.jpg", alt="")
     img(src="../W7/software_3.jpg", alt="")
     img(src="../W7/software_7.jpg", alt="")
 
-    h3 The spinning ring
-    p As usual, I had to go through several iterations until I came with a design that worked as expected. Early on I went for a circle. Here are a couple od designs for that:
+    h3 The spinning frame
+    p As usual, I had to go through several iterations until I came up with a design that worked as expected. Early on I went with a circle. Here are a couple of designs for that:
     img(src="ring_1.jpg", alt="")
 
     p Later on I decided it was a better fit to go with a rounded-corner rectangle, which I tried in 10 mm but ended up having to go all the way up to 20 mm thickness:
@@ -74,11 +75,11 @@ block main
     img(src="gears.jpg", alt="")
 
     h3 The PCB box
-    p For the Hello Fab Kit board I made a simple black plexiglass box with openings for the connectors:
+    p For the Hello Fab Kit board I made a simple black plexiglass box with openings for the connectors, LEDs and switches:
     img(src="hello_box.jpg", alt="")
 
     h3 The control panel
-    p This is really a very simple piece with placeholder holes for all the pots and switches in the control panel, to be laser cut in plexiglass. I made this in <a href="https://designer.gravit.io/">Gravit Designer</a>, sort of an Illustrator in the cloud.
+    p This is really a very simple piece with placeholder holes for all the ports and switches in the control panel, to be laser cut in plexiglass. I made this in <a href="https://designer.gravit.io/">Gravit Designer</a>, sort of an Illustrator on the cloud.
     img(src="control_panel.jpg", alt="")
 
     h3 The 3D Printed Fixture
@@ -91,7 +92,7 @@ block main
     img(src="fixture.jpg", alt="")
     
     p And this is the final one:
-    video(src="fixture.mp4" autoplay controls loop)
+    video(src="fixture.mp4" autoplay controls loop muted)
 
     h2 Learnings
     p Obviously this is not a finished piece, but it has all the necessary elements already. I need to polish and create the rest of the pieces following the same approach. 

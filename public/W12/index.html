@@ -39,7 +39,7 @@
       <li><a href="../W11/">Output Devices</a></li>
       <li><a href="../W12/">Interface Programming</a></li>
       <li><a href="../W13/">Intellectual Property</a></li>
-      <li><a href="../W14/">Embedded Networking</a></li>
+      <li><a href="../W14/">Networking</a></li>
       <li><a href="../W15/">Molding & Casting</a></li>
       <li><a href="../W16/">Wildcard: Waterjet CCC</a></li>
       <li><a href="../W17/">Mechanical & Machine Design</a></li>
@@ -49,14 +49,14 @@
     <h1>W12: Interface Programming</h1>
     <h2>Approach</h2>
     <p>For this assignment I thought I'd give <a href="https://processing.org/">Processing</a> a go, since it seems to have a similar structure and coding environment to Arduino.</p>
-    <p>Doing a little bit of research, I learned that both can communicate over the serial port, so it seemed woth a try. I also found about <a href="http://www.sojamo.de/libraries/controlP5/">ControlP5</a>, an open source Processing library that deals with GUI elements, so I thought I would also give that a try.</p>
+    <p>Doing a little bit of research, I learned that both can communicate over the serial port, so it seemed worth a try. I also found about <a href="http://www.sojamo.de/libraries/controlP5/">ControlP5</a>, an open source Processing library that deals with GUI elements, so I thought I would also give that a try.</p>
     <h2>The idea</h2>
     <p>Since <a href="../W6">I had built a custom version of the FabKit with an extra LED and button</a> for my <a href="../FP">Final Project</a>, I though I could use it to test bidireccional communication with a simple, proof of concept interface.</p>
     <p>The idea would be to control both LEDs in the PCB via the Processing GUI, and also change the GUI via the button on the PCB. Something like this:</p><img src="sketch.jpg" alt="">
     <p>In the end, as it is often the case, I ended up doing something slightly different.</p>
     <h2>Creating the GUI</h2>
-    <p>Processing allows the placing of text, geometric shapes and images, so I used a bit of everything.</p>
-    <p>In it we can see the main elements:</p>
+    <p>Processing allows the placing of text, geometric shapes and images by means of coordinates, so I used a bit of everything.</p>
+    <p>In it we can see the main elements sketched above:</p>
     <ul>
       <li>A switch to turn on the LED on the PCB</li>
       <li>A slider to control blinking speed for that LED</li>
@@ -66,7 +66,7 @@
     <p>Then I created the basic structure with the header and the dividing lines.</p>
     <h2>Having Arduino and Processing talking to each other</h2>
     <p>For both "devices" to talk to each other, they must be on the same serial port. This will change on each computer, but on mine it was "/dev/cu.usbserial-A9M9DV3R". </p><img src="port.jpg" alt="">
-    <p>Once they're both connected to the same port, each can write to that port and the other can read. All coommands exchanged are just one letter:</p>
+    <p>Once they're both connected to the same port, each can write to that port and the other can read. All commands exchanged in this case are just one letter:</p>
     <p>Processing to Arduino</p>
     <ul>
       <li>"N" for the LED to turn ON</li>
@@ -80,17 +80,17 @@
     </ul>
     <h2>Switching the LED ON and OFF</h2>
     <h3>Processing</h3>
-    <p>ControlP5 has a number of UI elements which can be configured in terms of size and color.</p><img src="switch.jpg" alt="">
-    <p>There's also a linked function that will be trigger whenever there's a change. It is whitin this function that a message is sent through the serial port:</p><img src="switch_func.jpg" alt="">
+    <p>ControlP5 has a number of UI elements which can be configured in terms of size and color. Amongst them is the toggle switch and the slider.</p><img src="switch.jpg" alt="">
+    <p>There's also a linked function that will be trigger whenever there's a change. It is within this function that a message is sent through the serial port:</p><img src="switch_func.jpg" alt="">
     <h3>Arduino</h3>
-    <p>From the other side, Arduino is reading the serial port and will react depending on the message. The one thing that didn't quite work for me is traying a "case" statement. For some reason the values were not being recognised and the branching didn't work, so I went with a bunch of "if" statements:</p><img src="LED_1.jpg" alt="">
+    <p>From the other side, Arduino is reading the serial port and will react depending on the message. The one thing that didn't quite work for me is using a "case" statement. For some reason the values were not being recognised and the branching didn't work, so I went with a bunch of "if" statements instead:</p><img src="LED_1.jpg" alt="">
     <p>Further down in the code Arduino checks the variables set up from the serial port reading to turn the LED on and off.</p><img src="LED_2.jpg" alt="">
     <p>Here's everyting in action:</p>
     <video src="switch.mp4" autoplay muted controls loop></video>
     <h2>Changing blinking speed</h2>
     <h3>Processing</h3>
     <p>ContolP5 also offers a slider UI element that can be easily configured:</p><img src="slider.jpg" alt="">
-    <p>There's a corresponding function that will send the value through the serial prot whenever the slider is moved. I used to the "floor" function to make a single number.</p><img src="slider_func.jpg" alt="">
+    <p>There's a corresponding function that will send the value through the serial port whenever the slider is moved. I used the "floor" function to make a single number out of an integer.</p><img src="slider_func.jpg" alt="">
     <h3>Arduino</h3>
     <p>Just like with the switch, Arduino will check the incoming serial messages to find a recognisable command, in this cases a number from 1 to 9.</p><img src="speed_1.jpg" alt="">
     <p>Later it will adjust the delay accoding to the speed:</p><img src="speed_2.jpg" alt="">
@@ -100,13 +100,13 @@
     <h3>Arduino</h3>
     <p>This time around the command is initiated in Arduino, as it will be writing on the serial port the state of the button as euther "1" or "0".</p><img src="button_1.jpg" alt="">
     <h3>Processing</h3>
-    <p>On the other side, Processing will read this valuue and change the fill for the button rectangle. It took me quite a long while to get this working, and the trick was to:</p>
+    <p>On the other side, Processing will read this value and change the fill for the button rectangle. It took me quite a long while and lots of trial and error to get this working, and the trick was to:</p>
     <ul> 
       <li>Filter null messages</li>
       <li>Trim the string to remove invisible characters</li>
       <li>Convert to integer for comparison</li>
     </ul><img src="button_2.jpg" alt="">
-    <p>Here's everything in aaction:</p>
+    <p>Here's everything in action:</p>
     <video src="button.mp4" autoplay muted controls loop></video>
     <h2>Files</h2>
     <ul>

@@ -39,7 +39,7 @@
       <li><a href="../W11/">Output Devices</a></li>
       <li><a href="../W12/">Interface Programming</a></li>
       <li><a href="../W13/">Intellectual Property</a></li>
-      <li><a href="../W14/">Embedded Networking</a></li>
+      <li><a href="../W14/">Networking</a></li>
       <li><a href="../W15/">Molding & Casting</a></li>
       <li><a href="../W16/">Wildcard: Waterjet CCC</a></li>
       <li><a href="../W17/">Mechanical & Machine Design</a></li>
@@ -48,14 +48,14 @@
   <main>
     <h1>W5: 3D Scanning + Printing</h1>
     <h2>3D Scannning</h2>
-    <p>3D scanning seems like a pretty straightforward task, but like so many other things, it requires a thoughtful apporach. What you think is the whole task is actually just tge beginnnig.</p>
+    <p>3D scanning seems like a pretty straightforward task, but like so many other things, it requires a thoughtful apporach. What you think is the whole task is actually just the beginnnig.</p>
     <p>This is the device we have at the lab, an Artec 3D:</p><img src="scan_1.jpg" alt=""><img src="scan_2.jpg" alt="">
     <p>White surfaces work better than darker ones, so we tried something that we thought might be manageable, like a small remote clicker on an improvised stand.</p><img src="clicker.jpg" alt="">
-    <p>We give it a go by scanning around the object. The software on the computer informs what the best scanning distance, but the white table doesn't help, plus it's hard to scan the back.</p>
+    <p>We give it a go by scanning around the object. The software on the computer informs what the best scanning distance is, but the white table doesn't help, plus it's hard to scan the back.</p>
     <video src="scanvid.mp4" type="video/mp4" autoplay controls muted loop></video>
     <p>The results are not very good, and we're not comfortable with the set-up, so we try something different. In the lab there's a bike helmet laying around, so we give that a try. To scan all sides, we improvise a rotating stand with a stool.</p><img src="scan_3.jpg" alt="">
     <p>In this case, we keep the scanner mostly in the same positions, making sure we're keeping the recommended distance and angle by the sofrware.</p><img src="scan_6.jpg" alt=""><img src="scan_7.jpg" alt="">
-    <p>The scanning process is fairly fast, so now we have to clean the mess[h]. The sfotware makes it fairly easy with a range of 2D and 3D selection tools.</p><img src="scan_8.jpg" alt=""><img src="scan_9.jpg" alt=""><img src="scan_10.jpg" alt="">
+    <p>The scanning process is fairly fast, so now we have to clean the mess[h]. The software makes it fairly easy with a range of 2D and 3D selection tools.</p><img src="scan_8.jpg" alt=""><img src="scan_9.jpg" alt=""><img src="scan_10.jpg" alt="">
     <p>From there on, it's a reasonable wizard-style process with just a few parameters to configure.</p><img src="scan_11.jpg" alt=""><img src="scan_12.jpg" alt=""><img src="scan_13.jpg" alt=""><img src="scan_14.jpg" alt="">
     <p>Here's the "final" product. Of course, in a real case scenario, we would probably go back to tweak the cleaning and the closing of surfaces.</p><img src="scan_15.jpg" alt="">
     <h2>3D Printing: Design Rules</h2>
@@ -70,7 +70,7 @@
     <p>And here's the Zortrax</p><img src="z_thickness.jpg" alt="">
     <h3>Clearance</h3>
     <p>In this case, the Snap Maker failed me... or maybe I failed her with not enough glue, heating and rafting. Everything was going smoothly but sadly the piece dettached halfway through.</p>
-    <video src="sm_clearance.mp4" type="video/mp4" autoplay controles muted loop></video>
+    <video src="sm_clearance.mp4" type="video/mp4" autoplay controls muted loop></video>
     <p>The Zortrax did complete the job had also had better defaults for support, although the quality overall is a bit rough</p><img src="z_clearance_1.jpg" alt=""><img src="z_clearance_2.jpg" alt="">
     <h3>Angle</h3><img src="sm_angle_1.jpg" alt=""><img src="sm_angle_2.jpg" alt=""><img src="z_angle.jpg" alt="">
     <h3>Bridging</h3>
@@ -93,11 +93,11 @@
     <p>On the inside, however, we need account for the difference.</p><img src="sm_dimensions_2.jpg" alt="">
     <h3>Anisotropy</h3><img src="sm_anisotropy.jpg" alt="">
     <h3>Thoughts on the different printers</h3>
-    <p>I have to say I came surprisingly happy with my purchase of the Snap Maker. It has proven to almost always produce better results, faster and more reliably than the other ones that I tried for the assignment. I thought it'd be more of a hobbyist toy, but now I can see I can use it for more things, not to mention the eye-opening CNC carving of PCBs that I can also do with it!</p>
+    <p>I have to say I came surprisingly happy with my purchase of the Snap Maker. It has proven to almost always produce better results, faster and more reliably than the other ones that I tried for the assignment. I thought it'd be more of a hobbyist toy, but now I can see I can use it for more things, not to mention <a href="../W4/">the eye-opening CNC carving of PCBs</a> that I can also do with it!</p>
     <h2>3D Printing: Model</h2>
-    <p>The idea is to do a a very simple proof od concept with two solids in a disposition that would be very complicated to achieve by substractive means. In this case, a sphere within a cube.</p><img src="cubesphere_0.jpg" alt=""><img src="cubesphere_1.jpg" alt="">
-    <p>Fusion likes to take its sweet little time to cloud-export to STL a simple file like this... like MINUTES!</p><img src="export.jpg" alt="">
-    <p>The first try is optimistic, with no supports. Perhaps unsurprisingly, It doesn't work:</p>
+    <p>The idea is to do a a very simple proof of concept with two solids in a disposition that would be very complicated to achieve by substractive means. In this case, a sphere within a cube.</p><img src="cubesphere_0.jpg" alt=""><img src="cubesphere_1.jpg" alt="">
+    <p>Fusion 360 likes to take its sweet little time to cloud-export to STL a simple file like this... as in MINUTES!</p><img src="export.jpg" alt="">
+    <p>The first try is optimistic, with no supports. Perhaps unsurprisingly, it doesn't work:</p>
     <video src="nosupport.mp4" type="video/mp4" autoplay controles muted loop></video>
     <p>Next try with light support for the sphere and the cube. I'm doubtful about the removal of all of it...</p><img src="sm_cubesphere.jpg" alt="">
     <p>It turned out quite alright!</p><img src="sm_cubesphere_finished.jpg" alt="">

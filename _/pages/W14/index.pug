@@ -2,7 +2,7 @@ extends ../../layouts/main.pug
 
 block main
   main
-    h1 W14: Embedded Networking
+    h1 W14: Networking
     p I get to this one assignment very late in the game and still with heavy restrictions on Fab Lab access.
     p I have a Bluetooth module laying around and I will try to connect it to <a href="../W6">my Hello Fab Kit board</a> which I created for the <a href="../FP/">Final Project</a> and to my mobile device to send commands between them.
 
@@ -12,12 +12,10 @@ block main
     img(src="connections.jpg", alt="")
 
     h3 On the mobile device
-    p The bluetood board indicated its availability for pairing with the blinking LED:
+    p The bluetooth board indicated its availability for pairing with the blinking LED:
     video(src="pairing.mp4" autoplay muted loop controls)
 
-
-
-    p I'm using the free <a href="https://apps.apple.com/es/app/arduinoblue/id1340487989?l=en">Arduino Blue</a> app to connect to the Bluetooth module. 
+    p I'm using the free <a href="https://apps.apple.com/es/app/arduinoblue/id1340487989?l=en">Arduino Blue</a> app to connect to the Bluetooth module. I tried many others, but this one was by far the best.
     video(src="app.mp4" autoplay muted loop controls)
 
     p Once both devices are connected to each other, the LED stops blinking.

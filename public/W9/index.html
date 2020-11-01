@@ -39,7 +39,7 @@
       <li><a href="../W11/">Output Devices</a></li>
       <li><a href="../W12/">Interface Programming</a></li>
       <li><a href="../W13/">Intellectual Property</a></li>
-      <li><a href="../W14/">Embedded Networking</a></li>
+      <li><a href="../W14/">Networking</a></li>
       <li><a href="../W15/">Molding & Casting</a></li>
       <li><a href="../W16/">Wildcard: Waterjet CCC</a></li>
       <li><a href="../W17/">Mechanical & Machine Design</a></li>
@@ -51,13 +51,13 @@
     <p>For this assignment I tried the classic HC-SR04 ultrasound sensor. </p><img src="sensor.jpg" alt="">
     <p>It works  by sending a sound pulse and listening back for the echo. Then it's a matter of doing the math with the speed of sound.</p>
     <p>The one thing I found is that it's a little finicky with voltage, so working on 3.3V produced somewhat inconsistent results, so I ended up powering the sensor independently.</p>
-    <video src="ultrasound_1.mp4" autoplay loop mute controls></video>
+    <video src="ultrasound_1.mp4" autoplay loop muted controls></video>
     <h2>Input devices for the final project</h2>
     <h3>External button</h3>
     <p>My first approach was to grab one of the push buttons I planned on using for the <a href="../FP/">Final Project's</a> control panel, and quickly test it. It's just basically the same sketch used in <a href="../W8/">Embedded Programming</a> but changing the pin number.</p>
-    <video src="ext_button.mp4" autoplay loop mute controls></video>
+    <video src="ext_button.mp4" autoplay loop muted controls></video>
     <h3>The Control Panel</h3>
-    <p>Like many others, bacuase of access and purchasing constraints due to the pandemic, I had to make do with stuff I had laying around to design a control panel for the <a href="../FP/">Final Project's</a> machine.</p><img src="control_panel.jpg" alt="">
+    <p>Like many others, bacause of access and purchasing constraints due to the pandemic, I had to make do with stuff I had laying around to design a control panel for the <a href="../FP/">Final Project's</a> <a href="../W17/">machine</a>.</p><img src="control_panel.jpg" alt="">
     <p> The control panel contains a number of digital and analog inputs and <a href="../W11/">outputs</a>:</p>
     <ul>
       <li>[IN] Two switches</li>
@@ -68,8 +68,8 @@
     </ul>
     <p>All inputs make use of a resistor to make the reading more stable:</p><img src="resistors.jpg" alt="">
     <p>In the following examples I'm using the switches just to toggle an LED:</p>
-    <video src="control_panel_1.mp4" autoplay loop mute controls></video>
-    <video src="control_panel_3.mp4" autoplay loop mute controls></video>
+    <video src="control_panel_1.mp4" autoplay loop muted controls></video>
+    <video src="control_panel_3.mp4" autoplay loop muted controls></video>
     <p>In this case the potentiometer is controlling the delay between LED flashes</p>
     <video src="control_panel_2.mp4" autoplay loop mute controls></video>
     <p>In the next one, I'm using a push button to cycle through the LEDs.</p>

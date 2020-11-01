@@ -39,7 +39,7 @@
       <li><a href="../W11/">Output Devices</a></li>
       <li><a href="../W12/">Interface Programming</a></li>
       <li><a href="../W13/">Intellectual Property</a></li>
-      <li><a href="../W14/">Embedded Networking</a></li>
+      <li><a href="../W14/">Networking</a></li>
       <li><a href="../W15/">Molding & Casting</a></li>
       <li><a href="../W16/">Wildcard: Waterjet CCC</a></li>
       <li><a href="../W17/">Mechanical & Machine Design</a></li>
@@ -49,29 +49,29 @@
     <h1>W17: Mechanical & Machine Design</h1>
     <h2>The idea</h2>
     <p>As I mentioned in more detail in the <a href="../W1">Principles and Practices</a>, I've done some long-exposure light painting photography in the past, like the shot below:</p><img src="../W1/eMotion.jpg" alt="">
-    <p>To take these kinds of shots I had tp completely shut down a room to prevent the light from coming in. In a run-of-the-mill family apartment, this is quite a feat.</p>
+    <p>To take these kinds of shots I had to completely shut down a room to prevent the light from coming in. In a run-of-the-mill family apartment, this is quite a feat.</p>
     <p>Therefore, the idea of having a small, self-contained and portable studio of sorts to create light paintings seemed like both useful and interesting.</p>
-    <p>In the following drawing, we can see a closed box —no light comes in— with a small hole to take shots with a mobile phone's camera. Inside, there are a number of RGB LEDs that would move, creating the painting with their motion.</p><img src="../W1/box.jpg" alt="">
+    <p>In the following drawing, we can see a closed up box —no light comes in— with a small hole to take shots with a mobile phone's camera. Inside, there are a number of RGB LEDs that would move, creating the painting with their motion.</p><img src="../W1/box.jpg" alt="">
     <p>This assignment ended up becoming my <a href="../FP">final project</a>.</p>
     <h2>Designing and building the parts</h2>
-    <h3>Case</h3>
+    <h3>Case/Box</h3>
     <p>I though I'd use 10mm plywood, which was easy to source locally, light and manageable, all while being sturdy enough. The pieces are designed to fit tightly together, although I'll be applying glue close to the end of the project.</p><img src="../W7/software_1.jpg" alt="">
-    <p>I though I would add a bit of decoration in relation to the theme of the machine, so I though something like these circled patterns and letters were easy enough to machine yet added a nice touch.</p><img src="../W7/software_3.jpg" alt="">
+    <p>I though I would add a bit of decoration in relation to the theme of the machine, so I thought something like these circled patterns and letters were easy enough to machine yet added a nice touch.</p><img src="../W7/software_3.jpg" alt="">
     <video src="../W7/machining.mp4" autoplay muted controls loop></video>
     <p>Inside, the box was sprayed in matte black:</p><img src="black_1.jpg" alt="">
-    <p>Assembling was fairly easy, as the plywood has enough tolerance.</p>
+    <p>Assembling was fairly easy, as the plywood has enough tolerance yet the whole structure was tight.</p>
     <video src="../W7/assembling.mp4" autoplay controls muted loop></video>
     <p>Here's the case for the machine:</p><img src="../W7/assembled.jpg" alt="">
     <p>There's quite bit more detail in the <a href="../W7/">Computer Controlled Machining assignment</a>.</p>
     <h3>Frame</h3>
-    <p>As seen in the sketch above, my iniital design for the frame was a circle. Here can see a couople different takes on the base:</p><img src="../DEV/circle_1.jpg" alt="">
+    <p>As seen in the sketch above, my iniital design for the frame was a circle. Here we can see a couple different takes on the base:</p><img src="../DEV/circle_1.jpg" alt="">
     <video src="../DEV/circle_machinning_1.mp4" autoplay muted controls loop> </video><img src="../DEV/circle_2.jpg" alt="">
     <p>However, early prototypes showed this approach didn't work well with the focal length of a mobile camera working in the constraints of the case, so I tried other designs:</p><img src="alternatives_1.jpg" alt=""><img src="alternatives_2.jpg" alt=""><img src="../DEV/shapes.jpg" alt="">
     <p>Finally I ended up settling on the following one becasue it provided a constant an ideal distance to the top hole in the case, and that would become key when shooting.</p><img src="frame.jpg" alt="">
     <video src="frame.mp4" autoplay muted controls loop> </video>
-    <p>To finish the frame, there needs to be a hole through the base to attach it through it axis of rotation.</p><img src="hole.jpg" alt="">
-    <p>I broke a couple at this point, as it turned out to be to thing to withstand the hole at the base. </p><img src="crack.jpg" alt="">
-    <p>I ended up glueing two frames together to make a </p><img src="glue.jpg" alt="">
+    <p>To finish the frame, there needs to be a hole through the base to attach it through its axis of rotation.</p><img src="hole.jpg" alt="">
+    <p>I broke a couple at this point, as it turned out to be too thin to withstand the hole at the base. </p><img src="crack.jpg" alt="">
+    <p>I ended up glueing two frames together to make a thicker, 20mm frame</p><img src="glue.jpg" alt="">
     <p>The frame, along with the base, was also painted black:</p><img src="black_2.jpg" alt="">
     <p>I then installed the neopixel strip. Here's a first prototype:</p><img src="frame_2.jpg" alt="">
     <p>I used black tape to hide all the wires and Neopixel substrate:</p><img src="frame_3.jpg" alt="">
@@ -79,50 +79,50 @@
     <video src="frame_2.mp4" autoplay muted controls loop></video>
     <h3>Fixture</h3>
     <p>At the beginning, my idea was to pass on information and power to the frame through a set of concentric tracks, and fix everything together with just a screw and a nut, with a set of washer in the middle:</p><img src="tracks_0.jpg" alt=""><img src="tracks_1.jpg" alt="">
-    <p>I made a whole in the base of the case to host a bearing:</p><img src="tracks_2.jpg" alt="">
+    <p>I made a hole in the base of the case to host a bearing:</p><img src="tracks_2.jpg" alt="">
     <p>Inside the bearing I made some extra "cushion" with a couple of plexiglass washers. It took a few tries to get them just tight enough and a good fit for the screw.</p><img src="tracks_3.jpg" alt="">
     <p>I made the tracks out of PCB stock:</p>
     <video src="../DEV/tracks_1.mp4" autoplay muted controls loop> </video><img src="tracks_5.jpg" alt="">
     <p>Giving it a spin manually it seemd like everything was going to go smoothly. I was wrong.</p>
     <video src="../DEV/tracks_2.mp4" autoplay muted controls loop> </video>
     <p>I devised a number of ways to get the cables to connect to the tracks:</p><img src="../DEV/tracks_4.jpg" alt="">
-    <p>However, there was too much slack and contact it didn't make for a consistent connection. There would be enoigh drops in continuity to make it unusable.</p>
+    <p>However, there was too much slack and contact it didn't make for a consistent connection. There would be enough drops in continuity to make it unusable.</p>
     <video src="../DEV/tracks_3.mp4" autoplay muted controls loop>    </video>
     <p>I tried different designs and approaches, and ended up going on a different path: using a slip ring with a 3D printed fixture to hold everything together:</p><img src="../DEV/slipring_1.jpg" alt="">
     <p>The first design was a both bigger and simpler than other iterations. It features a longer attachment base, according to the first iterations of the frame, and also featured a simple hexagonal ending meant to be inserted in the gears below.</p><img src="../W2/fixture.jpg" alt="">
     <video src="big_fixture.mp4" autoplay muted controls loop>    </video>
-    <p>After a few iterations, the framed had moved to a shorter base, and I had also added a small bearing beneath the case's bed, to help with the tilting. This fixture still features the haxgonal fit for the gear, but also an axis that would go into that second bearing. </p><img src="../DEV/fixture_1.jpg" alt=""><img src="fixture_1.jpg" alt=""><img src="fixture_2.jpg" alt="">
+    <p>After a few iterations, the frame had evolved into a shorter base, and I had also added a small bearing beneath the case's bed, to help with the tilting. This fixture still features the haxgonal fit for the gear, but also an axis that would go into that second bearing. </p><img src="../DEV/fixture_1.jpg" alt=""><img src="fixture_1.jpg" alt=""><img src="fixture_2.jpg" alt="">
     <p>More info about the fixture can be found in the <a href="../W5">3D Printing assignment</a></p>
     <h3>Gears</h3>
-    <p>At first I planned on using the steo motor I had tried in the <a href="../W11">Output Assignment</a>, but it was pretty obvious the speed was too slow for the use case and I would need to multiply it with a system of gears.</p>
+    <p>At first I planned on using the step motor I had tried in the <a href="../W11">Output Assignment</a>, but it was pretty obvious the speed was too slow for the use case and I would need to multiply it with a system of gears.</p>
     <p>I used the online tool <a href="https://geargenerator.com/">Gear Generator</a> to create a couple of gears that would speed up the spinning of the frame. I went witrh the biggest and smallest size I could fit, which resulted in a 1:3 ratio approximately.</p>
     <video src="gears_1.mp4" autoplay muted controls loop></video>
     <p><a href="https://geargenerator.com/">Gear Generator</a> exports SVGs that can be later imported into AutoCAD, where I cleaned them (there's a lot of text within the gear with its details). I also added a shape used to fix the gears to the motor:</p><img src="../W2/gears.jpg" alt="">
-    <p>sads</p>
-    <video src="gears_2.mp4" autoplay muted controls loop></video><img src="gears_3.jpg" alt="">
+    <video src="gears_2.mp4" autoplay muted controls loop></video>
+    <p>These are the first iteration</p><img src="gears_3.jpg" alt="">
     <p>Eventually, after a number of tries and iterations, I ran out of 5mm white plexiglass and had to move to 3mm black plexiglass. I would then "glue" both pieces with chloroform:</p>
     <video src="../W3/gears_1.mp4" autoplay muted controls loop></video><img src="../DEV/gears_3.jpg" alt="">
     <p>As we can see, I tried to use the biggest and smallest gears I could fit beneath the bed.</p><img src="../W3/gears_3.jpg" alt="">
-    <p>More info about the fixture can be found in the <a href="../W3">Computer Controlled Cutting Assignment</a></p>
+    <p>More info about the fixture can be found in the <a href="../W5">3D Printing assignment</a></p>
     <h3>Motor</h3>
-    <p>As mentioned previously, the step motor I had in mind was too slow and didn't seem to have enough torque to move the gears:</p>
+    <p>As mentioned previously, the step motor I had in mind was too slow and didn't seem to have enough speed:</p>
     <video src="../W11/output_2.mp4" autoplay muted controls loop></video>
-    <p>However, the step motor I had could barely moved the gears:</p>
+    <p>It also didn't seem to have enough torque to move the gears:</p>
     <video src="motor_1.mp4" autoplay muted controls loop></video>
-    <p>I could've tried to make the gears lighter by removing material with a different design, but still I needed more speed. Since speed control was not a requirement for my project, I thought I'd try a servo motor. A quick proof of concept showed promise:</p>
+    <p>I could've tried to make the gears lighter by removing material with a different design, but I still needed more speed. Since speed control was not a requirement for my project, I thought I'd try a servo motor. A quick proof of concept showed promise:</p>
     <video src="motor_2.mp4" autoplay muted controls loop></video>
     <p>A quick set up with the gears engaged confirmed this was a good solution.</p>
     <video src="../DEV/fixture_3.mp4" autoplay muted controls loop>   </video>
     <h3>Controls</h3>
-    <p>I had a pretty good idea from the get go of the interace to control the machine, which was for better or worse constrained by the siwtches and buttons I had at my disposal at the time, since sourcing materials was complicated with covid slowdown.</p><img src="controls_sketch.jpg" alt="">
-    <p>It was fairly straighforward moving from a drawing to a digital design that I could use with the laser cutter. I measured all components and made the digital template.</p><img src="../W2/control_panel.jpg" alt="">
+    <p>I had a pretty good idea from the get go of the interace to control the machine, which was for better or worse constrained by the switches and buttons I had at my disposal at the time, since sourcing materials was complicated with covid slowdown.</p><img src="controls_sketch.jpg" alt="">
+    <p>It was fairly straighforward moving from a drawing to a digital design that I could use with the laser cutter. I measured all components and made a digital template.</p><img src="../W2/control_panel.jpg" alt="">
     <p>Black 3mm plexiglass was what I had at my disposal, so black it was. </p>
     <video src="../W3/control_panel.mp4" autoplay muted controls loop></video>
-    <p>Wiring was pretty straigh-forward too:</p><img src="../DEV/connections_3.jpg" alt="">
+    <p>Wiring was pretty straightforward too:</p><img src="../DEV/connections_3.jpg" alt="">
     <p>I don't think it gets any more 80s than this:</p><img src="../W9/control_panel.jpg" alt="">
     <h2>Operation</h2>
     <p>As seen in the sketch above, very early on I had the idea of two modes of operation: manual and automatic. This would allow for exploration both in interaction and programming.</p>
-    <p>Modes are selected with the main switch in the middle: Manual mode is on the left side and auto mode on the right sode.</p>
+    <p>Modes are selected with the main switch in the middle: Manual mode is on the left side and auto mode on the right side.</p>
     <video src="control_0.mp4" autoplay muted controls loop></video>
     <h3>Manual Operation</h3>
     <p>The color for the LEDs in the frame is chosen randomly by clicking this button:</p>

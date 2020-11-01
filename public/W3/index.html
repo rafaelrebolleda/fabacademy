@@ -39,7 +39,7 @@
       <li><a href="../W11/">Output Devices</a></li>
       <li><a href="../W12/">Interface Programming</a></li>
       <li><a href="../W13/">Intellectual Property</a></li>
-      <li><a href="../W14/">Embedded Networking</a></li>
+      <li><a href="../W14/">Networking</a></li>
       <li><a href="../W15/">Molding & Casting</a></li>
       <li><a href="../W16/">Wildcard: Waterjet CCC</a></li>
       <li><a href="../W17/">Mechanical & Machine Design</a></li>
@@ -49,28 +49,28 @@
     <h1>W3: Computer Controlled Cutting</h1>
     <h2>The laser cutter</h2>
     <p>Here's the laser cutter we have on the lab.</p><img src="laser1.jpg" alt="">
-    <h2>The Comb</h2>
-    <p>Alright... so back to Fusion360 to wrestle parametric design (still complete gibberish to me). First, I created a rough shape by just joining the dots</p><img src="comb1.jpg" alt="">
+    <h2>Characterization</h2>
+    <p>Alright... so back to Fusion360 to wrestle parametric design (still working my way through it!). To understand the limits of the machine, we create a comb. First, I created a rough shape by just joining the dots</p><img src="comb1.jpg" alt="">
     <p>In the next step I manually gave them constraints and measures</p><img src="comb2.jpg" alt="">
     <p>Finally, I move all cut dimensions as paramenters that depend on the material depth, in this case 2mm cardboard. In the following table we can see there's one user parameter with name "material" which has a value of "2mm". Below, all the dimensions are specified as multiples or operations over that one "material" variable.</p><img src="comb3.jpg" alt="">
     <p>This is the cutting of two combs to test what's the best fit and underdstand kerf value.</p><img src="laser4.jpg" alt="">
     <p>These are the values I tried</p><img src="laser5.jpg" alt="">
-    <p>The best match for this material is at 1,7mm, and measuring the actual cuts, we know the ketf value is 0.2mm</p><img src="laser6.jpg" alt="">
+    <p>The best match for this material is at 1,7mm, and measuring the actual cuts, we know the kerf value is 0.2mm</p><img src="laser6.jpg" alt="">
     <h2>A very basic construction kit</h2>
-    <p>Now that I have the measure, my goal is to learn:</p>
+    <p>Now that I have the measures and characteristics, my goal is to learn:</p>
     <ul>
       <li>How to apply parametric design with the material and machine in mind</li>
       <li>Learn how to use mirroring in CAD</li>
       <li>Learn how to use patterns in CAD</li>
     </ul>
     <p>I modeled two pieces in Fusion360, a simple one and another to be bent. Both use constraints and parameters extensively.</p><img src="CAD1.jpg" alt=""><img src="CAD2.jpg" alt="">
-    <p>Next, we need to import that inthe laser cutter software and adjust laser settings:</p><img src="settings.jpg" alt="">
+    <p>Next, we need to import that in the laser cutter software and adjust laser settings:</p><img src="settings.jpg" alt="">
     <p>Here we can see the actual cutting:</p>
     <video src="cutting.mp4" type="video/mp4" controls="true"></video>
     <p>And this is a very basic assembly of the kit!</p><img src="kit.jpg" alt="">
     <h2>Final Project Designs</h2>
     <h3>Gears</h3>
-    <p>I designed the gears with the <a href="https://geargenerator.com">Gear Generatos</a> tool, which is very convenient to test different sizes and ratios. The files can then be downloaded for further editing, in this case in AutoCAD.</p><img src="../DEV/gears_2.jpg" alt="">
+    <p>I designed the gears with the <a href="https://geargenerator.com">Gear Generator</a> tool, which is very convenient to test different sizes and ratios. The files can then be downloaded for further editing, in this case in AutoCAD.</p><img src="../DEV/gears_2.jpg" alt="">
     <p>In AutoCAD, I cleaned the files from some labeling generates by the tool and added the hole to fit the fixture that comes with the servo motor:</p><img src="../W2/gears.jpg" alt="">
     <p>This is a little snapshot of the cutting process:</p>
     <video src="gears_1.mp4" autoplay controls loop></video>
@@ -86,7 +86,7 @@
     <h3>Vinyl cutter</h3>
     <p>I used the vinyl cutter to add some decoration to the project, in the form of a big sticker with the Fab logo, which was <a href="https://upload.wikimedia.org/wikipedia/commons/d/d2/Fab_Lab_logo.svg">readily available on Wikipedia</a>div</p>
     <p>I imported it in Illustrator and removed everything but one piece of the logo. The Roland is a bit picky about outline size and coordinates.</p><img src="vinyl_prep.jpg" alt="">
-    <p>Then I print (cut) the same piece in three different rolls:</p>
+    <p>Then I print (cut) the same piece in three different rolls (red, green and blue):</p>
     <video src="vinyl_cutting.mp4" autoplay controls loop></video>
     <p>Then it's just about using the transfer paper and glueing it to the wood:</p><img src="vinyl_1.jpg" alt=""><img src="vinyl_2.jpg" alt=""><img src="vinyl_3.jpg" alt=""><img src="vinyl_4.jpg" alt="">
     <h2>Files</h2>

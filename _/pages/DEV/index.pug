@@ -3,7 +3,7 @@ extends ../../layouts/main.pug
 block main
   main
     h1 Project Development
-    p These are the initial high-level thoughts about the project development. I foresee these will change rapidly in time, as it often happens as we learsn and, well, things happen :)
+    p These are the initial high-level thoughts about the project development. I foresee these will change rapidly in time, as it often happens as we learn and, well, things happen :)
 
     h2 Spiral 1: Ideation
     ol.checklist 
@@ -16,11 +16,11 @@ block main
     h3 Potential Challenges
     p The main challenge seems to be to pass information and power through the spinning axis, both in between circles and down to the main board after the main motor.
 
-    p We've got a couple of ideas of how to go about it, based on good old LPs.
+    p We've got a couple of ideas of how to go about it, based on good old LP-records.
     img(src="LP1.jpg", alt="")
     img(src="LP2.jpg", alt="")
 
-    p We've also given some thought on how to manufacture some of these pieces with a combinations of 3D printing, small ball bearings and a few  hacks:
+    p We've also given some thought on how to manufacture some of these pieces with a combinations of 3D printing, small ball bearings and a few hacks:
     img(src="rings.jpg", alt="")
 
     p It also seems these devices are <a href="https://www.adafruit.com/product/775">also available</a> (d'oh), so it might be worth exploring the differences between the approaches.
@@ -88,7 +88,7 @@ block main
     h3 Week Assignments used for the project
     ul
       li: <a href="../W6">W6: Electronics Design</a>
-      li Output
+      li <a href="../W11">W11: Output</a>
     img(src="fabkit.jpg", alt="")
     video(src="test_pixels.mp4", autoplay muted controls loop)
     video(src="test_motor.mp4", autoplay muted controls loop)
@@ -116,11 +116,12 @@ block main
     p A fairly straightforward process, I tried a couple different designs:
     img(src="circle_1.jpg", alt="")
     video(src="circle_machinning_1.mp4", autoplay muted controls loop)
-    p It's super thing a light. However, I may do another one with a 15 mm stock, so drilling holes is less risky.
+    p It's super thin and light. However, I may do another one with a 15 mm stock, so drilling holes is less risky.
     img(src="circle_2.jpg", alt="")
+    
     p We also installed a bearing in the base of the box as part of the mechanical design.
     img(src="bearing.jpg", alt="")
-    p On eisseu though is that the depth of the box is too shallow for a mobile camera to see the whole ring. It's just too close.
+    p On issue though is that the depth of the box is too shallow for a mobile camera to see the whole ring. It's just too close.
     img(src="circle_3.jpg", alt="")
     p Therefore, I need to reconsider perspective and point of shooting. Perhaps even the shape itself... maybe a circle is not the best option. In fact, I ended giving it some thought and came up with better shaped for the final outcome:
     img(src="shapes.jpg", alt="")
@@ -132,7 +133,7 @@ block main
     p I used <a href="geargenerator.com">geargenerator.com</a> to create the gears and download them as DXF for further procesing before going to laser cut.
     img(src="gears_2.jpg", alt="")
 
-    p Gears are laser-cut in two 3mm plexiglas, which are then bound together with Chloroform:
+    p Gears are laser-cut in two 3mm plexiglas, which are then bound together with chloroform:
     img(src="gears_3.jpg", alt="")
 
 
@@ -153,38 +154,45 @@ block main
       li.scrapped Consider adding a second, free spinning circle inside
       li.done Design the interface
 
+    h3 Week Assignments used for the project
+    ul
+      li: <a href="../W2">W2: Computer Aided Design</a>
+      li: <a href="../W3">W3: Computer Controlled Cutting</a>
+      li: <a href="../W5">W5: 3D Printing</a>
+      li: <a href="../W7">W6: Computer Controlled Machining</a>
+
     p This turned out to be a spiral full of failures and hard learnings. With time running out, some decisions will need to be made.
 
     h3 The LP tracks
     p With the motor and the lights testes out, I though it'd be a piece of cake to set up the "LP" tracks to communicate over the axis. Sure enough, building the board was easy enough.
     video(src="tracks_1.mp4" autoplay muted controls loop)
     
-    p Setting them up in the machine was easy enough. Here it is in action with the new shape and hooked to the servo through the gears:
+    p Setting them up in the machine was also easy. Here it is in action with the new shape and hooked to the servo through the gears:
     video(src="tracks_2.mp4" autoplay muted controls loop)
 
-    p I though setting the tracks to communicate with the board would be an easy part in the whole project, but it ended up being pretty complicated, to the point of resulting unsuable.
+    p I though setting the tracks to communicate with the board would be an easy part in the whole project, but it ended up being pretty complicated, to the point of resulting unusable.
 
-    p I did a first hand test. You can see it sort of looks OK:
+    p I did a hand operated test. You can see it sort of looks OK:
     video(src="tracks_3.mp4" autoplay muted controls loop)
 
-    p In praxtice, however, connection is very fiddly. It works <em>most</em> of the time, but it fails enough times to not be usable.
+    p In practice, however, connection is very fiddly. It works <em>most</em> of the time, but it fails enough times to not be usable.
     p I design and implemented different approaches, but all failed differently:
     img(src="tracks_4.jpg", alt="")
     img(src="tracks_5.jpg", alt="")
 
-    p I also tried different approachs on the LP itself, with cables both on top and directly on the track. Most worked most of the time, but none worked reliably. 
+    p I also tried different approaches on the LP itself, with cables both on top and directly on the track. Most worked most of the time, but none worked reliably. 
     img(src="tracks_6.jpg", alt="")
 
-    p All in all, this was a big set back, and with time running out, we dieced to resort to the slip ring I had as backup. 
+    p All in all, this was a big set back, and with time running out, we decided to resort to the slip ring I had as backup. 
     
     h3 The Plan B
-    p This wll require a different, wider shape, with different seating, rebuidling the gear socket and 3D printing the pass-through transmission, and probably many more things.
+    p This will require a different, wider shape, with different seating, rebuidling the gear socket and 3D printing the pass-through transmission, and probably many more things.
     p Here's an idea of how it should work:
     img(src="slipring_1.jpg", alt="")
 
     p This is quite a set back in the planning, which means I'll probably have to drop the inner ring. I'm hoping to still get good shots out of it :)
 
-    p This is new piece modeled in CAD:
+    p This is a new piece modeled in CAD:
     img(src="fixture_1.jpg", alt="")
 
     p And here's the final outcome: 
@@ -211,9 +219,9 @@ block main
 
     h3 Week Assignments used for the project
     ul
-      li: <a href="../W2">W2: Computer Aided Design</a>
-      li: <a href="../W3">W3: Computer Controlled Cutting</a>
-      li: <a href="../W7">W7: Computer Controlled Machining</a>
+      li <a href="../W2">W2: Computer Aided Design</a>
+      li <a href="../W3">W3: Computer Controlled Cutting</a>
+      li <a href="../W7">W7: Computer Controlled Machining</a>
       li <a href="../W8">W8: Embedded Programming</a>
       li <a href="../W9">W9: Input Devices</a>
       li <a href="../W11">W11: Output Devices</a>
@@ -237,7 +245,7 @@ block main
     p Made some quick and dirty connections to test the UI
     img(src="connections_3.jpg", alt="")
 
-    p In the Input and Output assignments I go in more detail about how it works, but these are a couple of examples:
+    p In the <a href="../W9">Input</a> and <a href="../W11">Output</a> assignments I go in more detail about how it works, but these are a couple of examples:
     video(src="interface_4.mp4", autoplay muted controls loop)
     video(src="interface_5.mp4", autoplay muted controls loop)
 
@@ -245,13 +253,11 @@ block main
     p I thoought I'd add some colour by means of the FAB logo, so I cut it in vinyl:
     img(src="vinyl_1.jpg", alt="")
 
-    p I also added some rails to prevent the cover from moving:
+    p I also added four rails to prevent the top case from moving:
     img(src="stoppers.jpg", alt="")
 
-
-
     h3 Integrating the electronics
-    p As seen above, I also made a plexiglass case for the Hello Fabkit board so I coudl install it underneath the machine:
+    p As seen above, I also made a plexiglass case for the <a href="../W6">Hello Fabkit</a> board so I could install it underneath the <a href="../W17">machine</a>:
     img(src="fabkit_box.jpg", alt="")
 
     p These are the I/O connections:
