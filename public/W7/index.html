@@ -49,7 +49,10 @@
     <h1>W7: Computer Controlled Machining</h1>
     <p>During this assignment I want to make part of my <a href="../W17">machine</a> and <a href="../FP">final project</a>, namely the box that will hold it.</p><img src="box.jpg" alt="">
     <h2>Characterization</h2>
-    <p>I'm on my own for this group assignment, so I looked up the machine specs and run the comb test from 9.5mm to 10.5 mm (for a 10 mm stock) to understand the impact of the drill on the stock and start learning the toolpath software and operation of the machine.</p><img src="cnc.jpg" alt=""><img src="peine_1.jpg" alt=""><img src="peine_2.jpg" alt="">
+    <p>I'm on my own for this group assignment, so I looked up the machine specs and run the comb test from 9.5mm to 10.5 mm (for a 10 mm stock) to understand the impact of the drill on the stock and start learning the toolpath software and operation of the machine.</p><img src="cnc.jpg" alt="">
+    <p>In the image above we can clearly see two emergency buttons. These need to be unlocked by pulling and twisting them on start-up in order  to be able to operate the machine. </p>
+    <p>Then, in order to proceed with an emergency stop of the machine it's enough to press any of them, either the one by the operating display or the one that moves with the drilling head. I actually used this emergency stops in a couple of occasions, one of them just to stop the process due to a bad design, and the other one when the bit was going to hit a screw used to attach the stock to the base.</p>
+    <p>In the following screenshot we can see the simulated path as displayed by the software. This was actually pretty helpful throughtout the process and though it's not strictly necessary to produce the piece, it can help identify potentional issues like cutting on the wrong side (inside / outside) or tab placement, amongst others.  </p><img src="peine_1.jpg" alt=""><img src="peine_2.jpg" alt="">
     <p>9.7 mm is the tightest fit.</p><img src="peine_3.jpg" alt="">
     <h2>Design</h2>
     <p>I decided to go with AutoCAD this time, as I hadn't worked too much with it before and it seemed like a simple project to try it out. I've found AutoCAD to have a pretty weird conceptual model for someone who comes from 2D, but it's very fast once you get the hang of it. Simmetry tools are pretty handy!</p>
@@ -57,7 +60,14 @@
     <p>My local instructor lends me a tip for introducing nicer, softer dogbones: rather than centering the circle on the corner, displace it by the radius. It's proven to work pretty well later on:</p><img src="software_2.jpg" alt="">
     <p>I also want to add a bit of decoration, so I import some text from Illustrator and create a few circles that follow up on theme of the machine. These will be carved on to the surface of each side. I may fill or paint them later if I have some time.</p><img src="software_3.jpg" alt="">
     <h2>Preparing for machining</h2>
-    <p>The software to prepare the design for machining is VCarve, and it seems fairly simple. After importing the designs from AutoCAD it's a matter of selecting paths and instruct the machine to drill, follow a path, empty an area, etc. There are options for depth, speed, feed, rpms, tabs, etc. </p><img src="software_4.jpg" alt="">
+    <p>The software to prepare the design for machining is VCarve, and it seems fairly simple. After importing the designs from AutoCAD it's a matter of selecting paths and instruct the machine to drill, follow a path, empty an area, etc. There are options for depth, speed, feed, rpms, tabs, etc. </p>
+    <p>In my case, we used a 4mm bit and for 10mm plywood we set up the following params:</p>
+    <ul>
+      <li>Speed: 14000 rpm (also tried 12000 rpm on 15mm and 20mm stock)</li>
+      <li>Feed Rate: 800 mm / min (also tried 1400 mm and 2000 mm / min, which turned out too aggressive)</li>
+      <li>Cut depth: 0.5 mm</li>
+      <li>Dig speed: 120 mm / min</li>
+    </ul><img src="software_4.jpg" alt="">
     <p>The software can simulate the machining process:</p><img src="software_7.jpg" alt="">
     <p>First, we'll drill the dogbones, and then run the paths around the outside so measures are kept. We try to make the most of the stock by using it's sides, although that requires very good alignment of the stock, which is typically a bit bent a needs taming:</p><img src="stock_1.jpg" alt=""><img src="stock_2.jpg" alt="">
     <p>To make the most of the stock, we zero in with special care:</p><img src="laser.jpg" alt=""><img src="zero.jpg" alt="">

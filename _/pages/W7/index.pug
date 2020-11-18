@@ -9,6 +9,12 @@ block main
     h2 Characterization
     p I'm on my own for this group assignment, so I looked up the machine specs and run the comb test from 9.5mm to 10.5 mm (for a 10 mm stock) to understand the impact of the drill on the stock and start learning the toolpath software and operation of the machine.
     img(src="cnc.jpg", alt="")
+
+    p In the image above we can clearly see two emergency buttons. These need to be unlocked by pulling and twisting them on start-up in order  to be able to operate the machine. 
+    p Then, in order to proceed with an emergency stop of the machine it's enough to press any of them, either the one by the operating display or the one that moves with the drilling head. I actually used this emergency stops in a couple of occasions, one of them just to stop the process due to a bad design, and the other one when the bit was going to hit a screw used to attach the stock to the base.
+
+    p In the following screenshot we can see the simulated path as displayed by the software. This was actually pretty helpful throughtout the process and though it's not strictly necessary to produce the piece, it can help identify potentional issues like cutting on the wrong side (inside / outside) or tab placement, amongst others.  
+
     img(src="peine_1.jpg", alt="")
     img(src="peine_2.jpg", alt="")
     
@@ -31,6 +37,13 @@ block main
 
     h2 Preparing for machining
     p The software to prepare the design for machining is VCarve, and it seems fairly simple. After importing the designs from AutoCAD it's a matter of selecting paths and instruct the machine to drill, follow a path, empty an area, etc. There are options for depth, speed, feed, rpms, tabs, etc. 
+    p In my case, we used a 4mm bit and for 10mm plywood we set up the following params:
+    ul
+      li Speed: 14000 rpm (also tried 12000 rpm on 15mm and 20mm stock)
+      li Feed Rate: 800 mm / min (also tried 1400 mm and 2000 mm / min, which turned out too aggressive)
+      li Cut depth: 0.5 mm
+      li Dig speed: 120 mm / min
+
     img(src="software_4.jpg", alt="")
 
     p The software can simulate the machining process:
